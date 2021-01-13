@@ -1,294 +1,108 @@
 <!doctype html>
-<html lang="pt-BR">
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Documentação</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <meta charset="utf-8">
-  <title>Medicamentos Biológicos</title>
-  <base href="/medicamentosbiologicos/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
-  <meta name="Description"
-    content="Portal sobre Medicamentos Biológicos - Espaço de acesso as informações Medicamentos Biológicos na realidade brasileira.">
-  <meta name="author" content="Arq. Vanderson Paim">
-  <meta name="email" content="vandersonsilvapaim@gmail.com,vpaim.ti@gmail.com">
-  <meta name="keywords"
-    content=" Match, RIM, Maintain, ORG, Sync, Integrate, ISO, Regulatory Information Management, pharmacovigilance, units of measurement, ISO 11616, units of presentation,">
-  <!-- <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="android-icon-96x96.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="android-chrome-96x96.png">
-  <link rel="icon" type="image/png" sizes="194x194" href="favicon-194x194.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
-  <link rel="manifest" href="manifest.json">
-  <link rel="manifest" href="biologicos.webmanifest">
-  <!-- <link rel="mask-icon" href="safari-pinned-tab.svg" color="#ffffff"> -->
-  <meta name="apple-mobile-web-app-title" content="Biologicos">
-  <meta name="application-name" content="Biologicos">
-  <meta name="msapplication-TileColor" content="#15a2dc">
-  <meta name="msapplication-TileImage" content="mstile-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="dns-prefeth" href="//biologicos.org/" />
-  <link rel="preconnect" href="ngsw-worker.js" as="script">
-  <link rel="preconnect" href="https://biologicos.org/#/home">
-  <link rel="canonical" href="https://biologicos.org" />
-  <link rel="preload" href="material-icons.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="1Ptug8zYS_SKggPNyC0ITw.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
 
-  <style type="text/css">
-    html {
-      box-sizing: border-box;
-    }
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">Documentação</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
 
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit
-    }
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
 
-    html {
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%
-    }
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
 
-    body {
-      background: #fff;
-      text-transform: none;
-      font-variant: normal;
-      font-weight: 400;
-      font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      font-style: normal;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-      line-height: 1.47059;
-      letter-spacing: -.022em;
-      color: #333;
-      margin: 0px;
-      width: 100% !important;
-      height: 100% !important;
-      /* position: absolute;
-      overflow: unset; */
-    }
+<h1 id="app-biologicos">app-biologicos</h1>
+<p>Este projeto foi criado para ...</p>
+<p>Baseado na estratégia</p>
+<!-- ![Image of conceito](https://conceito.png) -->
 
-    input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
+<p>Saiba mais sobre o projeto em <a href="https://about">https://about</a>.</p>
+<!--
+![Image of beneficios](https://beneficios.png) -->
 
-    /* Let's get this party started */
-    ::-webkit-scrollbar {
-      background: transparent;
-      background: #b0b0b09d;
-      position: absolute;
-      max-width: 10px;
-      right: 2px;
-    }
 
-    ::-webkit-scrollbar:hover {
-      background: #b0b0b027;
-      position: absolute;
-    }
 
-    ::-webkit-scrollbar:window-inactive {
-      width: 0px;
-    }
 
-    /* Track */
-    ::-webkit-scrollbar-track {
-      background: transparent;
-      position: absolute;
-    }
 
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background-color: #aaa;
-      border-radius: 6px;
-      position: absolute;
-    }
 
-    ::-webkit-scrollbar-thumb:hover {
-      background-color: #727070;
-      border-radius: 6px;
-      position: absolute;
-    }
 
-    @-webkit-keyframes rotator {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
 
-      100% {
-        -webkit-transform: rotate(270deg);
-        transform: rotate(270deg);
-      }
-    }
 
-    @keyframes rotator {
-      0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
 
-      100% {
-        -webkit-transform: rotate(270deg);
-        transform: rotate(270deg);
-      }
-    }
 
-    .path {
-      stroke-dasharray: 187;
-      stroke-dashoffset: 0;
-      -webkit-transform-origin: center;
-      transform-origin: center;
-      -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
-      animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
-    }
 
-    @-webkit-keyframes colors {
-      0% {
-        stroke: #4285F4;
-      }
 
-      25% {
-        stroke: #0200de;
-      }
 
-      50% {
-        stroke: #00eef7;
-      }
+                   
 
-      75% {
-        stroke: #009a29;
-      }
 
-      100% {
-        stroke: #09ed00;
-      }
-    }
 
-    @keyframes colors {
-      0% {
-        stroke: #4285F4;
-      }
 
-      25% {
-        stroke: #0200de;
-      }
-
-      50% {
-        stroke: #00eef7;
-      }
-
-      75% {
-        stroke: #009a29;
-      }
-
-      100% {
-        stroke: #09ed00;
-      }
-    }
-
-    @-webkit-keyframes dash {
-      0% {
-        stroke-dashoffset: 187;
-      }
-
-      50% {
-        stroke-dashoffset: 46.75;
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-      }
-
-      100% {
-        stroke-dashoffset: 187;
-        -webkit-transform: rotate(450deg);
-        transform: rotate(450deg);
-      }
-    }
-
-    @keyframes dash {
-      0% {
-        stroke-dashoffset: 187;
-      }
-
-      50% {
-        stroke-dashoffset: 46.75;
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-      }
-
-      100% {
-        stroke-dashoffset: 187;
-        -webkit-transform: rotate(450deg);
-        transform: rotate(450deg);
-      }
-    }
-  </style>
-
-</head>
-
-<link rel="preload" href="styles.css" as="style">
-<link rel="stylesheet" href="styles.css">
-
-<body>
-
-  <app-root>
-    <div style=" height: 100%; display: flex !important; align-items: center; justify-content: center;">
-      <svg style="-webkit-animation: rotator 1.4s linear infinite; animation: rotator 1.4s linear infinite;"
-        width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-      </svg>
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
     </div>
-  </app-root>
-
-  <script type="application/ld+json">{
-    "@context": "http://schema.org",
-    "@type": "WebSite",
-    "name": "Biologicos",
-    "alternateName": "Biologicos Brasil",
-    "url": "https://biologicos.org/",
-    "description": "Portal é um espaço de acesso as informações ,
-    "about": "O Biologicos consiste em um ...",
-    "image": "https://biologicos.org/icon.png",
-    "keywords": " Match, RIM, Maintain, ORG, Sync, Integrate, ISO, Regulatory Information Management, pharmacovigilance, units of measurement, ISO 11616, units of presentation,",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://biologicos.org/#/search?q={q}",
-      "query-input": "required name=q"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Vanderson Paim",
-      "email": "vpaim.ti@gmail.com",
-      "address": "São Paulo - SP - Brasil",
-      "jobTitle": "Architect of Software for Web",
-      "url": "https://www.linkedin.com/in/vandersonpaim/"
-    }
-  }</script>
-
-  <noscript>
-    <div style=" height: 100%; display: flex !important; align-items: center; justify-content: center;">
-      <svg style="-webkit-animation: rotator 1.4s linear infinite; animation: rotator 1.4s linear infinite;"
-        width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-      </svg>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
     </div>
-    Please enable JavaScript to continue using this application.
-  </noscript>
-<script src="/medicamentosbiologicos/runtime-es2015.721333a8acbf2bc53cdb.js" type="module"></script><script src="/medicamentosbiologicos/runtime-es5.721333a8acbf2bc53cdb.js" nomodule defer></script><script src="/medicamentosbiologicos/polyfills-es5.6833c2d3cbeeeea06399.js" nomodule defer></script><script src="/medicamentosbiologicos/polyfills-es2015.bedbf52bd3b342e776cc.js" type="module"></script><script src="/medicamentosbiologicos/vendor-es2015.b775816cbcf8b002e808.js" type="module"></script><script src="/medicamentosbiologicos/vendor-es5.b775816cbcf8b002e808.js" nomodule defer></script><script src="/medicamentosbiologicos/main-es2015.0b5723be8eba24a5d029.js" type="module"></script><script src="/medicamentosbiologicos/main-es5.0b5723be8eba24a5d029.js" nomodule defer></script></body>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
 
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
 </html>
