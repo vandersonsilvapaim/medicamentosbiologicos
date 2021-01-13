@@ -1,0 +1,1037 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Documentação</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Documentação</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>LogService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/components/shared/services/log.service.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Tratamento de Exceções, Depuração e Logging.
+<code>LogService</code> oferece  um conjunto de metodos que possa produzir boa informação de log.
+Níveis de prioridade:
+  --SEVERE: falha séria. Frequentemente haverá uma exceção associada
+  --CONFIG: mensagens geradas durante a configuração da aplicação
+  --INFO: prioridade moderada: indica o que está sendo feito em vez de ser usado especificamente para depuração (ex. uma tarefa terminou)
+  --FINE: informação de rastreamento: usado para debug
+  --FINER: informação detalhada de rastreamento: usado para debug
+  --FINEST: informação altamente detalhada de rastreamento: usado para debug</p>
+
+            </p>
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Static</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#LISTA_DE_CODIGOS_E_STATUS">LISTA_DE_CODIGOS_E_STATUS</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#CONFIG">CONFIG</a>
+                            </li>
+                            <li>
+                                <a href="#FINE">FINE</a>
+                            </li>
+                            <li>
+                                <a href="#FINER">FINER</a>
+                            </li>
+                            <li>
+                                <a href="#FINEST">FINEST</a>
+                            </li>
+                            <li>
+                                <a href="#INFO">INFO</a>
+                            </li>
+                            <li>
+                                <a href="#SEVERE">SEVERE</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/components/shared/services/log.service.ts:20</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>O método onerror
+Manipulador de eventos onerror é um recurso para facilitar a manipulação de erros no JavaScript.
+  O evento de erro é acionado no objeto janela sempre que ocorre uma exceção na página.</p>
+<p>Tratar erros é de suma importância e deixam as aplicações bem mais robustas e profissionais.
+O addEventListener não detecta erros de compilação. Por isso uso esse método.
+O onerror é melhor em erros de compilação pois passa mais argumentos.
+<a href="https://www.youtube.com/watch?v=hAIuWUQeN2I">https://www.youtube.com/watch?v=hAIuWUQeN2I</a>
+<a href="https://pt.stackoverflow.com/questions/144365/como-pegar-a-mensagem-detalhes-com-addeventlistenererror">https://pt.stackoverflow.com/questions/144365/como-pegar-a-mensagem-detalhes-com-addeventlistenererror</a>
+<a href="https://angular.io/api/core/ErrorHandler">https://angular.io/api/core/ErrorHandler</a></p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CONFIG"></a>
+                    <span class="name">
+                        <b>
+                            CONFIG
+                        </b>
+                        <a href="#CONFIG"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>CONFIG(message: literal type | string)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">src/app/components/shared/services/log.service.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p><code>CONFIG</code> para mensagens geradas durante a configuração da aplicação</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                            <code>literal type | string</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="FINE"></a>
+                    <span class="name">
+                        <b>
+                            FINE
+                        </b>
+                        <a href="#FINE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>FINE(message: literal type | string)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="177"
+                            class="link-to-prism">src/app/components/shared/services/log.service.ts:177</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p><code>FINE</code> para informação de rastreamento: usado para debug</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                            <code>literal type | string</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="FINER"></a>
+                    <span class="name">
+                        <b>
+                            FINER
+                        </b>
+                        <a href="#FINER"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>FINER(message: literal type | string)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/app/components/shared/services/log.service.ts:194</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p><code>FINER</code> para informação detalhada de rastreamento: usado para debug</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                            <code>literal type | string</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="FINEST"></a>
+                    <span class="name">
+                        <b>
+                            FINEST
+                        </b>
+                        <a href="#FINEST"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>FINEST(message: literal type | string)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="213"
+                            class="link-to-prism">src/app/components/shared/services/log.service.ts:213</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p><code>FINEST</code> para informação altamente detalhada de rastreamento: usado para debug</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                            <code>literal type | string</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="INFO"></a>
+                    <span class="name">
+                        <b>
+                            INFO
+                        </b>
+                        <a href="#INFO"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>INFO(message: literal type | string)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="161"
+                            class="link-to-prism">src/app/components/shared/services/log.service.ts:161</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p><code>INFO</code> para prioridade moderada.
+indica o que está sendo feito em vez de ser usado especificamente para depuração;
+(ex. <code>uma tarefa terminou</code>)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                            <code>literal type | string</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SEVERE"></a>
+                    <span class="name">
+                        <b>
+                            SEVERE
+                        </b>
+                        <a href="#SEVERE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>SEVERE(message: literal type | string)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/app/components/shared/services/log.service.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p><code>SEVERE</code> para falha séria. Frequentemente haverá uma exceção associada</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                            <code>literal type | string</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="LISTA_DE_CODIGOS_E_STATUS"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Static</span>
+                                <span class="modifier">Readonly</span>
+                            LISTA_DE_CODIGOS_E_STATUS</b>
+                            <a href="#LISTA_DE_CODIGOS_E_STATUS"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+        _1_INFORMATIVA: &#x27;Ocorreu um erro. Tente novamente mais tarde!&#x27;,
+        _2_INDISPONIBILIDADE_CONSULTA: &#x27;Consulta temporariamente indisponivel, tente mais tarde!&#x27;,
+        _100_CONTINUAR: &#x27;&#x27;,
+        _101_MUDANDO_PROTOCOLOS: &#x27;&#x27;,
+        _102_PROCESSAMENTO: &#x27;&#x27;,
+        _122_PEDIDO_URI_MUITO_LONGO: &#x27;&#x27;,
+        _200_SUCESSO: &#x27;&#x27;,
+        _201_CRIADO: &#x27;&#x27;,
+        _202_ACEITO: &#x27;&#x27;,
+        _203_NÃO_AUTORIZADO: &#x27;&#x27;,
+        _204_NENHUM_CONTEÚDO: &#x27;&#x27;,
+        _205_RESET: &#x27;&#x27;,
+        _206_CONTEÚDO_PARCIAL: &#x27;&#x27;,
+        _207_STATUS_MULTI: &#x27;&#x27;,
+        _400_REDIRECIONAMENTO: &#x27;&#x27;,
+        _300_MÚLTIPLA_ESCOLHA: &#x27;&#x27;,
+        _301_MOVIDO: &#x27;&#x27;,
+        _302_ENCONTRADO: &#x27;&#x27;,
+        _303_CONSULTE_OUTROS: &#x27;&#x27;,
+        _304_NÃO_MODIFICADO: &#x27;&#x27;,
+        _305_USE_PROXY: &#x27;&#x27;,
+        _306_PROXY_SWITCH: &#x27;&#x27;,
+        _307_REDIRECIONAMENTO_TEMPORÁRIO: &#x27;&#x27;,
+        _308_REDIRECIONAMENTO_PERMANENTE: &#x27;&#x27;,
+        _4_ERRO_DE_CLIENTE: &#x27;&#x27;,
+        _400_REQUISIÇÃO_INVÁLIDA: &#x27;&#x27;,
+        _401_NÃO_AUTORIZADO: &#x27;&#x27;,
+        _402_PAGAMENTO_NECESSÁRIO: &#x27;&#x27;,
+        _403_PROIBIDO: &#x27;&#x27;,
+        _404_NÃO_ENCONTRADO: &#x27;&#x27;,
+        _405_MÉTODO_NÃO_PERMITIDO: &#x27;&#x27;,
+        _406_NÃO_ACEITÁVEL: &#x27;&#x27;,
+        _407_AUTENTICAÇÃO_DE_PROXY_NECESSÁRIA: &#x27;&#x27;,
+        _408_TEMPO_DE_REQUISIÇÃO_ESGOTOU: &#x27;&#x27;,
+        _409_CONFLITO_GERAL: &#x27;&#x27;,
+        _410_GONE: &#x27;&#x27;,
+        _411_COMPRIMENTO_NECESSÁRIO: &#x27;&#x27;,
+        _412_PRÉ_CONDIÇÃO_FALHOU: &#x27;&#x27;,
+        _413_ENTIDADE_DE_SOLICITAÇÃO_MUITO_GRANDE: &#x27;&#x27;,
+        _414_PEDIDO_URI_TOO_LONG: &#x27;&#x27;,
+        _415_TIPO_DE_MÍDIA_NÃO_SUPORTADO: &#x27;&#x27;,
+        _416_SOLICITADA_DE_FAIXA_NÃO_SATISFATÓRIA: &#x27;&#x27;,
+        _417_FALHA_NA_EXPECTATIVA: &#x27;&#x27;,
+        _418_EU_SOU_UM_BULE_DE_CHÁ: &#x27;&#x27;,
+        _422_ENTIDADE_IMPROCESSÁVEL: &#x27;&#x27;,
+        _423_FECHADO: &#x27;&#x27;,
+        _424_FALHA_DE_DEPENDÊNCIA: &#x27;&#x27;,
+        _425_COLEÇÃO_NÃO_ORDENADA: &#x27;&#x27;,
+        _426_UPGRADE_BRIGATÓRIO: &#x27;&#x27;,
+        _429_PEDIDOS_EM_EXCESSO: &#x27;&#x27;,
+        _450_BLOQUEADOS_PELO_CONTROLE_DE_PAIS_DO_WINDOWS: &#x27;&#x27;,
+        _499_CLIENTE_FECHOU_PEDIDO: &#x27;&#x27;,
+        _5_OUTROS_ERROS: &#x27;&#x27;,
+        _500_ERRO_INTERNO_DO_SERVIDOR: &#x27;&#x27;,
+        _501_NÃO_IMPLEMENTADO: &#x27;&#x27;,
+        _502_BAD_GATEWAY: &#x27;&#x27;,
+        _503_SERVIÇO_INDISPONÍVEL: &#x27;&#x27;,
+        _504_GATEWAY_TIME_OUT: &#x27;&#x27;,
+        _505_HTTP_VERSION_NOT_SUPPORTED: &#x27;&#x27;,
+    }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/components/shared/services/log.service.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ConfigService } from &#x27;../config/config.service&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { environment } from &#x27;src/environments/environment.prod&#x27;;
+
+/**
+ * Tratamento de Exceções, Depuração e Logging.
+ * &#x60;LogService&#x60; oferece  um conjunto de metodos que possa produzir boa informação de log.
+ * Níveis de prioridade:
+ *  --SEVERE: falha séria. Frequentemente haverá uma exceção associada
+ *  --CONFIG: mensagens geradas durante a configuração da aplicação
+ *  --INFO: prioridade moderada: indica o que está sendo feito em vez de ser usado especificamente para depuração (ex. uma tarefa terminou)
+ *  --FINE: informação de rastreamento: usado para debug
+ *  --FINER: informação detalhada de rastreamento: usado para debug
+ *  --FINEST: informação altamente detalhada de rastreamento: usado para debug
+ */
+@Injectable({
+    providedIn: &#x27;root&#x27;
+})
+export class LogService {
+
+
+
+    /**
+   * O método onerror
+   * Manipulador de eventos onerror é um recurso para facilitar a manipulação de erros no JavaScript.
+   *  O evento de erro é acionado no objeto janela sempre que ocorre uma exceção na página.
+   *
+   * Tratar erros é de suma importância e deixam as aplicações bem mais robustas e profissionais.
+   * O addEventListener não detecta erros de compilação. Por isso uso esse método.
+   * O onerror é melhor em erros de compilação pois passa mais argumentos.
+   * https://www.youtube.com/watch?v&#x3D;hAIuWUQeN2I
+   * https://pt.stackoverflow.com/questions/144365/como-pegar-a-mensagem-detalhes-com-addeventlistenererror
+   * https://angular.io/api/core/ErrorHandler
+   */
+    // window.onerror &#x3D; (message, source, lineno, colno, error)  &#x3D;&gt; {
+    //     console.log(&#x60;
+    //   Error:
+    //   Mensagem ${JSON.stringify(message)},
+    //   Endereço: ${JSON.stringify(source)},
+    //   Número da Linha: ${JSON.stringify(lineno)},
+    //   Número da coluna: ${JSON.stringify(colno)},
+    //   Error Object (object): ${JSON.stringify(error)}
+    //   &#x60;);
+    //     // send to datalake
+    //     // if(erro de carregamento preguisoso){
+    //     window.location.reload();
+    //     // }
+    // return true;
+    //   };
+
+    constructor(private http: HttpClient) { }
+
+    static readonly LISTA_DE_CODIGOS_E_STATUS &#x3D; {
+        _1_INFORMATIVA: &#x27;Ocorreu um erro. Tente novamente mais tarde!&#x27;,
+        _2_INDISPONIBILIDADE_CONSULTA: &#x27;Consulta temporariamente indisponivel, tente mais tarde!&#x27;,
+        _100_CONTINUAR: &#x27;&#x27;,
+        _101_MUDANDO_PROTOCOLOS: &#x27;&#x27;,
+        _102_PROCESSAMENTO: &#x27;&#x27;,
+        _122_PEDIDO_URI_MUITO_LONGO: &#x27;&#x27;,
+        _200_SUCESSO: &#x27;&#x27;,
+        _201_CRIADO: &#x27;&#x27;,
+        _202_ACEITO: &#x27;&#x27;,
+        _203_NÃO_AUTORIZADO: &#x27;&#x27;,
+        _204_NENHUM_CONTEÚDO: &#x27;&#x27;,
+        _205_RESET: &#x27;&#x27;,
+        _206_CONTEÚDO_PARCIAL: &#x27;&#x27;,
+        _207_STATUS_MULTI: &#x27;&#x27;,
+        _400_REDIRECIONAMENTO: &#x27;&#x27;,
+        _300_MÚLTIPLA_ESCOLHA: &#x27;&#x27;,
+        _301_MOVIDO: &#x27;&#x27;,
+        _302_ENCONTRADO: &#x27;&#x27;,
+        _303_CONSULTE_OUTROS: &#x27;&#x27;,
+        _304_NÃO_MODIFICADO: &#x27;&#x27;,
+        _305_USE_PROXY: &#x27;&#x27;,
+        _306_PROXY_SWITCH: &#x27;&#x27;,
+        _307_REDIRECIONAMENTO_TEMPORÁRIO: &#x27;&#x27;,
+        _308_REDIRECIONAMENTO_PERMANENTE: &#x27;&#x27;,
+        _4_ERRO_DE_CLIENTE: &#x27;&#x27;,
+        _400_REQUISIÇÃO_INVÁLIDA: &#x27;&#x27;,
+        _401_NÃO_AUTORIZADO: &#x27;&#x27;,
+        _402_PAGAMENTO_NECESSÁRIO: &#x27;&#x27;,
+        _403_PROIBIDO: &#x27;&#x27;,
+        _404_NÃO_ENCONTRADO: &#x27;&#x27;,
+        _405_MÉTODO_NÃO_PERMITIDO: &#x27;&#x27;,
+        _406_NÃO_ACEITÁVEL: &#x27;&#x27;,
+        _407_AUTENTICAÇÃO_DE_PROXY_NECESSÁRIA: &#x27;&#x27;,
+        _408_TEMPO_DE_REQUISIÇÃO_ESGOTOU: &#x27;&#x27;,
+        _409_CONFLITO_GERAL: &#x27;&#x27;,
+        _410_GONE: &#x27;&#x27;,
+        _411_COMPRIMENTO_NECESSÁRIO: &#x27;&#x27;,
+        _412_PRÉ_CONDIÇÃO_FALHOU: &#x27;&#x27;,
+        _413_ENTIDADE_DE_SOLICITAÇÃO_MUITO_GRANDE: &#x27;&#x27;,
+        _414_PEDIDO_URI_TOO_LONG: &#x27;&#x27;,
+        _415_TIPO_DE_MÍDIA_NÃO_SUPORTADO: &#x27;&#x27;,
+        _416_SOLICITADA_DE_FAIXA_NÃO_SATISFATÓRIA: &#x27;&#x27;,
+        _417_FALHA_NA_EXPECTATIVA: &#x27;&#x27;,
+        _418_EU_SOU_UM_BULE_DE_CHÁ: &#x27;&#x27;,
+        _422_ENTIDADE_IMPROCESSÁVEL: &#x27;&#x27;,
+        _423_FECHADO: &#x27;&#x27;,
+        _424_FALHA_DE_DEPENDÊNCIA: &#x27;&#x27;,
+        _425_COLEÇÃO_NÃO_ORDENADA: &#x27;&#x27;,
+        _426_UPGRADE_BRIGATÓRIO: &#x27;&#x27;,
+        _429_PEDIDOS_EM_EXCESSO: &#x27;&#x27;,
+        _450_BLOQUEADOS_PELO_CONTROLE_DE_PAIS_DO_WINDOWS: &#x27;&#x27;,
+        _499_CLIENTE_FECHOU_PEDIDO: &#x27;&#x27;,
+        _5_OUTROS_ERROS: &#x27;&#x27;,
+        _500_ERRO_INTERNO_DO_SERVIDOR: &#x27;&#x27;,
+        _501_NÃO_IMPLEMENTADO: &#x27;&#x27;,
+        _502_BAD_GATEWAY: &#x27;&#x27;,
+        _503_SERVIÇO_INDISPONÍVEL: &#x27;&#x27;,
+        _504_GATEWAY_TIME_OUT: &#x27;&#x27;,
+        _505_HTTP_VERSION_NOT_SUPPORTED: &#x27;&#x27;,
+    };
+
+    /**
+     * &#x60;SEVERE&#x60; para falha séria. Frequentemente haverá uma exceção associada
+     */
+    SEVERE(message: { component: string, method: string, value?: any, error?: any } | string) {
+        // this.http.post(url,message);
+        return (() &#x3D;&gt; {
+            if (!environment.production) {
+                if (message) {
+                    // tslint:disable-next-line:no-console
+                    console.error();
+                    // tslint:disable-next-line:no-console
+                    console.table(message);
+                    // tslint:disable-next-line:no-console
+                    console.trace();
+                }
+            }
+        })();
+    }
+
+    /**
+    *  &#x60;CONFIG&#x60; para mensagens geradas durante a configuração da aplicação
+     */
+    CONFIG(message: { component: string, method: string, value?: any, error?: any } | string) {
+        // this.http.post(url,message);
+        return (() &#x3D;&gt; {
+            if (!environment.production) {
+                if (message) {
+                    // tslint:disable-next-line:no-console
+                    console.table(message);
+                    // tslint:disable-next-line:no-console
+                    console.trace();
+                    // tslint:disable-next-line:no-console
+                    console.trace();
+                }
+                // tslint:disable-next-line:no-console
+                console.trace();
+            }
+        })();
+    }
+
+    /**
+    *  &#x60;INFO&#x60; para prioridade moderada.
+    *  indica o que está sendo feito em vez de ser usado especificamente para depuração;
+    * (ex. &#x60;uma tarefa terminou&#x60;)
+     */
+    INFO(message: { component: string, method: string, value?: any, error?: any } | string) {
+        // this.http.post(url,message);
+        return (() &#x3D;&gt; {
+            if (!environment.production) {
+                if (message) {
+                    console.log(&#x60;%c INFO: ${message}!&#x60;, &#x27;color: blue; font-style: italic&#x27;);
+                }
+                // tslint:disable-next-line:no-console
+                console.trace();
+            }
+        })();
+    }
+
+    /**
+    *  &#x60;FINE&#x60; para informação de rastreamento: usado para debug
+     */
+    FINE(message: { component: string, method: string, value?: any, error?: any } | string) {
+        // this.http.post(url,message);
+        return (() &#x3D;&gt; {
+            if (!environment.production) {
+                if (message) {
+                    // tslint:disable-next-line:no-console
+                    console.log(&#x60;%c FINE: ${message}!&#x60;, &#x27;color: #04fc25; background-color: #000000&#x27;);
+                }
+                // tslint:disable-next-line:no-console
+                console.trace();
+            }
+        })();
+    }
+
+    /**
+    *  &#x60;FINER&#x60; para informação detalhada de rastreamento: usado para debug
+     */
+    FINER(message: { component: string, method: string, value?: any, error?: any } | string) {
+        // this.http.post(url,message);
+        return (() &#x3D;&gt; {
+            if (!environment.production) {
+                if (message) {
+                    // tslint:disable-next-line:no-console
+                    console.table(message);
+                    // tslint:disable-next-line:no-console
+                    console.trace();
+                }
+                // tslint:disable-next-line:no-console
+                console.trace();
+            }
+        })();
+    }
+
+    /**
+    *  &#x60;FINEST&#x60; para informação altamente detalhada de rastreamento: usado para debug
+     */
+    FINEST(message: { component: string, method: string, value?: any, error?: any } | string) {
+        // this.http.post(url,message);
+
+        return (() &#x3D;&gt; {
+            if (!environment.production) {
+                if (message) {
+                    // tslint:disable-next-line:no-console
+                    console.table(message);
+                    // tslint:disable-next-line:no-console
+                    console.trace();
+                }
+                // tslint:disable-next-line:no-console
+                console.trace();
+            }
+        })();
+    }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'LogService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
