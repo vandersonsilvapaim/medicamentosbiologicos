@@ -1,0 +1,526 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Documentação</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Documentação</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>GeolocationService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/components/shared/services/geolocation.service.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p><a href="https://github.com/hengkiardo/restcountries">https://github.com/hengkiardo/restcountries</a></p>
+
+            </p>
+
+
+
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/shared/services/geolocation.service.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Observable, of, throwError, zip } from &#x27;rxjs&#x27;;
+import { catchError, map, switchMap, takeWhile, tap } from &#x27;rxjs/operators&#x27;;
+import { environment } from &#x27;src/environments/environment&#x27;;
+
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+
+import { Country } from &#x27;../models&#x27;;
+import {
+  Endereco, GeocodingEndereco, GeolocationEndereco, GeolocationModel
+} from &#x27;../models/geolocation.model&#x27;;
+
+/**
+ * https://github.com/hengkiardo/restcountries
+ */
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class GeolocationService {
+
+  constructor(private http: HttpClient) { }
+
+  // private GEOLOCOTION &#x3D; btoa(&#x27;geolocotion&#x27;);
+
+  // /**
+  //  * ### Países REST
+  //  * Obtenha informações sobre os países através de uma API RESTful https://restcountries.eu
+  //  * - País &#x3D;&gt; TB_TERMO , ISO 3166
+  //  * - Idioma &#x3D;&gt; TB_TERMO , ISO 639
+  //  * - DDI &#x3D;&gt; TB_DDI , União Internacional de Telecomunicações
+  //  */
+  // public paises &#x3D; {
+
+  //     /**
+  //      * ### ALL
+  //      * Obtenha todos os países
+  //      * https://restcountries.eu/#api-endpoints-all
+  //      * - País &#x3D;&gt; TB_TERMO , ISO 3166
+  //      */
+  //     // all: () &#x3D;&gt; this.http.get&lt;Country[]&gt;(&#x60;${environment.restcountries}/rest/v2/all&#x60;)
+  //     all: () &#x3D;&gt; this.http.get&lt;Country[]&gt;(&#x60;${environment.all_countries_mock}&#x60;)
+  //         .pipe(catchError(err &#x3D;&gt; {
+  //             return throwError(&#x60;Ocorreu um erro ao consultar todos os países&#x60;);
+  //         })),
+
+  //     /**
+  //     * ### By CODE
+  //     * Pesquise por nome do país. Pode ser o nome nativo ou nome parcial
+  //     * https : // restcountries.eu/rest/v2/name/{name}
+  //     * - País &#x3D;&gt; TB_TERMO , ISO 3166
+  //     */
+  //     byName: (_name) &#x3D;&gt; this.http.get&lt;Country[]&gt;(&#x60;${environment.restcountries}/rest/v2/name/${_name}&#x60;)
+  //         .pipe(catchError(err &#x3D;&gt; {
+  //             return throwError(&#x60;Ocorreu um erro ao consultar o nome do país: ${_name}&#x60;);
+  //         })),
+
+  //     /**
+  //     * ### By CODE
+  //     * Pesquise por codigo do país. Pode ser ISO 3166-1 2-letter or 3-letter
+  //     * https://restcountries.eu/rest/v2/alpha/BR
+
+  //     */
+  //     byCode: (_code) &#x3D;&gt; this.http.get&lt;Country&gt;(&#x60;${environment.restcountries}/rest/v2/alpha/${_code}&#x60;)
+  //         .pipe(catchError(err &#x3D;&gt; {
+  //             return throwError(&#x60;Ocorreu um erro ao consultar o codigo do país: ${_code}&#x60;);
+  //         })),
+
+  //     /**
+  //     * ### By full Name
+  //     * Pesquisar por nome completo do país
+  //     * https : // restcountries.eu/rest/v2/name/{name}?fullText&#x3D;true
+  //     * - País &#x3D;&gt; TB_TERMO , ISO 3166
+  //     */
+  //     byFullName: (_name) &#x3D;&gt;
+  //         this.http.get&lt;Country&gt;(&#x60;${environment.restcountries}/rest/v2/name/${_name}?fullText&#x3D;true&#x60;).pipe(map(ps &#x3D;&gt; ps[0]))
+  //             .pipe(catchError(err &#x3D;&gt; {
+  //                 return throwError(&#x60;Ocorreu um erro ao consultar o nome do país: ${_name}&#x60;);
+  //             })),
+
+  //     /**
+  //      * ### Código de chamada ou DDI
+  //      * Pesquisar por código de chamada
+  //      * https://restcountries.eu/rest/v2/callingcode/{callingcode}
+  //      * - DDI &#x3D;&gt; TB_DDI , União Internacional de Telecomunicações
+  //      */
+  //     byCallingcode: (_code) &#x3D;&gt;
+  //         this.http.get&lt;Country[]&gt;(&#x60;${environment.restcountries}/rest/v2/callingcode/${_code}&#x60;)
+  //             .pipe(catchError(err &#x3D;&gt; {
+  //                 return throwError(&#x60;Ocorreu um erro ao consultar o callingCode: ${_code}&#x60;);
+  //             })),
+
+  //     /**
+  //      * ### FILTER RESPONSE - all callingCodes e flags
+  //      * Obtenha callingCodes, flag e name de todos os países
+  //      * https://restcountries.eu/rest/v2/{service}?fields&#x3D;{field};{field};{field}
+  //      * https://restcountries.eu/rest/v2/all?fields&#x3D;name;flag;callingCodes
+  //      * - DDI &#x3D;&gt; TB_DDI , União Internacional de Telecomunicações
+  //      */
+  //     allCallingCode: () &#x3D;&gt; this.http.get&lt;Country[]&gt;(&#x60;${environment.all_calling_code_mock}&#x60;)
+  //         .pipe(catchError(err &#x3D;&gt; {
+  //             return throwError(&#x60;Ocorreu um erro ao consultar os callingCodes&#x60;);
+  //         })),
+
+  //     /**
+  //      * ### FILTER RESPONSE - idiomas
+  //      * Obtenha languages, flag e name de todos os países
+  //      * https://restcountries.eu/rest/v2/{service}?fields&#x3D;{field};{field};{field}
+  //      * https://restcountries.eu/rest/v2/all?fields&#x3D;name;flag;languages
+  //      * - Idioma &#x3D;&gt; TB_TERMO , ISO 639
+  //      */
+  //     allLanguages: () &#x3D;&gt; of(&#x60;${environment.all_languages_mock}&#x60;)
+  //         .pipe(
+  //             switchMap(_URL &#x3D;&gt; this.http.get&lt;Country[]&gt;(_URL)),
+  //             catchError(err &#x3D;&gt; {
+  //                 return throwError(&#x60;Ocorreu um erro ao consultar todas as linguas&#x60;);
+  //             })),
+
+  //     byLanguage: (iso639: string, _code?) &#x3D;&gt;
+  //         of(&#x60;${environment.restcountries}/rest/v2/lang/${iso639}?fields&#x3D;name;flag;languages;alpha3Code&#x60;)
+  //             .pipe(
+  //                 takeWhile(() &#x3D;&gt; !(iso639 &#x3D;&#x3D; null || iso639 &#x3D;&#x3D;&#x3D; &#x27;null&#x27;)),
+  //                 switchMap(_URL &#x3D;&gt; this.http.get(_URL)),
+  //                 map((_p_s: Country[]) &#x3D;&gt; {
+  //                     let _r &#x3D; _p_s;
+  //                     if (_code) {
+  //                         _r &#x3D; _p_s.filter((_p) &#x3D;&gt; _p.alpha3Code &#x3D;&#x3D;&#x3D; _code);
+  //                     }
+  //                     return _r;
+  //                 }),
+  //                 catchError(err &#x3D;&gt; {
+  //                     return throwError(&#x60;Ocorreu um erro ao consultar as languages&#x60;);
+  //                 })
+  //             ),
+
+  //     byLanguages: (languages: { alpha3Code: string, iso639_2: string }[]) &#x3D;&gt; {
+  //         let list_country &#x3D; of([]);
+
+  //         if (languages.length &lt; 1) {
+  //             return list_country;
+  //         }
+
+  //         languages.forEach((_language) &#x3D;&gt; {
+  //             list_country &#x3D; list_country.pipe(
+  //                 switchMap(cs &#x3D;&gt; {
+  //                     return zip(of(cs), this.paises.byLanguage(_language.iso639_2, _language.alpha3Code));
+  //                 }),
+  //                 map((_c) &#x3D;&gt; {
+  //                     const _countrys: Country[] &#x3D; [];
+  //                     _c.forEach(c &#x3D;&gt; c.forEach(p &#x3D;&gt; _countrys.push(p)));
+  //                     return _countrys;
+  //                 })
+  //             );
+  //         });
+
+  //         return list_country;
+  //     },
+
+  // };
+
+  // public geolocationModel &#x3D; {
+  //     /**
+  //      * input: Decimaldegrees
+  //      * output: geolocationModel
+  //      */
+  //     byDecimaldegrees: (_position: string): Observable&lt;GeolocationModel&gt; &#x3D;&gt; {
+  //         if (!_position) { return; }
+  //         const length &#x3D; _position.length;
+  //         const _v &#x3D; _position.search(&#x27;,&#x27;);
+  //         const _latitude &#x3D; _position.substring(0, _v).trim();
+  //         const _longitude &#x3D; _position.substring(_v + 1, length).trim();
+  //         const _coords &#x3D; {
+  //             latitude: _latitude, longitude: _longitude,
+  //             accuracy: null,
+  //             altitude: null,
+  //             altitudeAccuracy: null,
+  //             heading: null,
+  //             speed: null
+  //         };
+  //         return of({ coords: _coords, timestamp: null });
+  //     },
+
+  //     /**
+  //     * input: geolocationModel
+  //     * output: Decimaldegrees
+  //     */
+  //     toDecimaldegrees: (_position: GeolocationModel): Observable&lt;string&gt; &#x3D;&gt; {
+  //         if (!_position) { return; }
+  //         const latitude &#x3D; _position.coords.latitude;
+  //         const longitude &#x3D; _position.coords.longitude;
+  //         return of(&#x60;${latitude}, ${longitude}&#x60;);
+  //     }
+  // };
+
+  // public geolocationEndereco &#x3D; {
+  //     /**
+  //     * input: GeolocationEndereco
+  //     * output: Decimaldegrees
+  //     */
+  //     toDecimaldegrees: (_geoEndereco: GeolocationEndereco): Observable&lt;string&gt; &#x3D;&gt; {
+  //         if (!_geoEndereco) { return; }
+  //         const latitude &#x3D; _geoEndereco.latitude;
+  //         const longitude &#x3D; _geoEndereco.longitude;
+  //         return of(&#x60;${latitude}, ${longitude}&#x60;);
+  //     },
+
+  //     /**
+  //    * https://developer.mapquest.com/documentation/geocoding-api/
+  //    *Consulta pela Latitude e Longitude mais próxima
+  //    * @return Observable&lt;GeocodingEndereco&gt;
+  //    */
+  //     byPosition: (_position: GeolocationModel): Observable&lt;GeocodingEndereco&gt; &#x3D;&gt; {
+  //         if (!_position) { return; }
+  //         const _latitude &#x3D; _position.coords.latitude;
+  //         const _longitude &#x3D; _position.coords.longitude;
+  //         const _key &#x3D; &#x27;key&#x3D;Goc9KF46maCGoBsnHofwwJik3qmWB8WS&#x27;;
+  //         const _map &#x3D; &#x27;ThumbMaps&#x3D;true&amp;includeRoadMetadata&#x3D;false&amp;includeNearestIntersection&#x3D;true&#x27;;
+  //         const _URL &#x3D; &#x60;${environment.openmapquestapi}/geocoding/v1/reverse?${_key}&amp;location&#x3D;${_latitude},${_longitude}&amp;${_map}&#x60;;
+  //         return this.http.get&lt;GeocodingEndereco&gt;(_URL);
+  //     }
+  // };
+
+  // public geocodingEndereco &#x3D; {
+  //     /**
+  //     * input: GeocodingEndereco
+  //     * output: Decimaldegrees
+  //     */
+  //     toDecimaldegrees: (_geocodingE: GeocodingEndereco): Observable&lt;string&gt; &#x3D;&gt; {
+  //         if (!_geocodingE) { return; }
+  //         const latitude &#x3D; _geocodingE.results[0].locations[0].latLng.lat;
+  //         const longitude &#x3D; _geocodingE.results[0].locations[0].latLng.lng;
+  //         return of(&#x60;${latitude}, ${longitude}&#x60;);
+  //     },
+
+  //     /**
+  //      * https://developer.mapquest.com/documentation/geocoding-api/
+  //      *Consulta pelo CEP
+  //      * @return Observable&lt;GeocodingEndereco&gt;
+  //      */
+  //     byCEP: (cep): Observable&lt;GeocodingEndereco&gt; &#x3D;&gt; {
+  //         const _key &#x3D; &#x27;key&#x3D;Goc9KF46maCGoBsnHofwwJik3qmWB8WS&#x27;;
+  //         const _map &#x3D; &#x27;ThumbMaps&#x3D;true&amp;includeRoadMetadata&#x3D;false&amp;includeNearestIntersection&#x3D;true&#x27;;
+  //         const _request &#x3D; &#x60;${environment.mapquestapi}/geocoding/v1/address?${_key}&amp;location&#x3D;&#x60;;
+  //         return this.getEnderecoByCep(cep).pipe(
+  //             map(_cep &#x3D;&gt; &#x60;${_cep.logradouro},${_cep.localidade}, ${_cep.uf}&#x60;),
+  //             map(_street &#x3D;&gt; &#x60;${_request} ${_street}&amp;${_map}&#x60;),
+  //             switchMap(_URL &#x3D;&gt; this.http.get&lt;GeocodingEndereco&gt;(_URL)),
+  //             catchError(err &#x3D;&gt; {
+  //                 return throwError(&#x60;Ocorreu um erro ao consultar o cep :${cep}&#x60;);
+  //             })
+  //         );
+  //     }
+  // };
+
+  // public position(): GeolocationModel {
+  //     try {
+  //         const _value &#x3D; localStorage.getItem(this.GEOLOCOTION);
+  //         if (_value) {
+  //             const a &#x3D; atob(_value);
+  //             const res &#x3D; JSON.parse(a);
+  //             return res;
+  //         }
+  //     } catch (exception) {
+  //     }
+  //     return;
+  //     // tslint:disable-next-line:semicolon
+  // }
+
+  // /**
+  // * https://viacep.com.br/
+  // *
+  // * @return Observable&lt;Endereco&gt;
+  // */
+  // public getEnderecoByCep(cep): Observable&lt;Endereco&gt; {
+  //     const _cep &#x3D; cep.replace(/\D/g, &#x27;&#x27;).slice(0, 8);
+  //     return this.http.get&lt;Endereco&gt;(&#x60;${environment.viacep}/ws/${_cep}/json/&#x60;)
+  //         .pipe(catchError(err &#x3D;&gt; {
+  //             return throwError(&#x60;Ocorreu um erro ao consultar o cep :${cep}&#x60;);
+  //         }));
+  // }
+
+  // public getLocation(): Observable&lt;GeolocationModel&gt; {
+
+  //     if (this.position()) {
+  //         return of(this.position());
+  //     }
+
+  //     const res: Observable&lt;GeolocationModel&gt; &#x3D; new Observable(observer &#x3D;&gt; {
+  //         if (window.navigator &amp;&amp; window.navigator.geolocation) {
+  //             window.navigator.geolocation.getCurrentPosition(
+  //                 (_position) &#x3D;&gt; {
+  //                     observer.next(_position);
+  //                     observer.complete();
+  //                 },
+  //                 (error) &#x3D;&gt; observer.error(error)
+  //             );
+  //         } else {
+  //             observer.error(&#x27;Unsupported Browser&#x27;);
+  //         }
+  //     });
+
+  //     return res.pipe(
+  //         tap(p &#x3D;&gt; this.setPosition(this.GEOLOCOTION, p)),
+  //         catchError(err &#x3D;&gt; {
+  //             return throwError(&#x60;Ocorreu erro ao consultar a localização&#x60;);
+  //         })
+  //     );
+  // }
+
+  // private setPosition(key: string, p: GeolocationModel) {
+  //     const _accuracy &#x3D; JSON.stringify(p.coords.accuracy &#x3D;&#x3D; null ? &#x27;&#x27; : p.coords.accuracy);
+  //     const _altitude &#x3D; JSON.stringify(p.coords.altitude &#x3D;&#x3D; null ? &#x27;&#x27; : p.coords.altitude);
+  //     const _altitudeAccuracy &#x3D; JSON.stringify(p.coords.altitudeAccuracy &#x3D;&#x3D; null ? &#x27;&#x27; : p.coords.altitudeAccuracy);
+  //     const _heading &#x3D; JSON.stringify(p.coords.heading &#x3D;&#x3D; null ? &#x27;&#x27; : p.coords.heading);
+  //     const _latitude &#x3D; JSON.stringify(p.coords.latitude &#x3D;&#x3D; null ? &#x27;&#x27; : p.coords.latitude);
+  //     const _longitude &#x3D; JSON.stringify(p.coords.longitude &#x3D;&#x3D; null ? &#x27;&#x27; : p.coords.longitude);
+  //     const _speed &#x3D; JSON.stringify(p.coords.speed &#x3D;&#x3D; null ? &#x27;&#x27; : p.coords.speed);
+  //     const _timestamp &#x3D; JSON.stringify(p.timestamp &#x3D;&#x3D; null ? &#x27;&#x27; : p.timestamp);
+  //     const _value &#x3D; JSON.stringify({
+  //         coords:
+  //         {
+  //             accuracy: _accuracy,
+  //             altitude: _altitude,
+  //             altitudeAccuracy: _altitudeAccuracy,
+  //             heading: _heading,
+  //             latitude: _latitude,
+  //             longitude: _longitude,
+  //             speed: _speed
+  //         },
+  //         timestamp: _timestamp
+  //     });
+  //     const _item &#x3D; btoa(_value);
+  //     localStorage.setItem(key, _item);
+  // }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'GeolocationService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

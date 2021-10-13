@@ -1,0 +1,485 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Documentação</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Documentação</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>SWSheetComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/shared/layout/sheet/sw-sheet.component.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>sw-sheet</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">template</td>
+                <td class="col-md-9"><pre class="line-numbers"><code class="language-html">&lt;mat-nav-list&gt;                    &lt;a mat-list-item (click)&#x3D;&quot;confirm($event)&quot; style&#x3D;&quot;background-color: #00fba730;&quot;&gt;
+                      &lt;span mat-line&gt;Nova versão disponível!&lt;/span&gt;
+                      &lt;span mat-line&gt;Atualizar!&lt;/span&gt;
+                    &lt;/a&gt;
+
+                    &lt;a mat-list-item (click)&#x3D;&quot;cancel($event)&quot;&gt;
+                      &lt;span mat-line&gt;Agora não!&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/mat-nav-list&gt;
+</code></pre></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cancel">cancel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#confirm">confirm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_swSheetRef: MatBottomSheetRef<SWSheetComponent>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/shared/layout/sheet/sw-sheet.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_swSheetRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatBottomSheetRef&lt;SWSheetComponent&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancel"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            cancel
+                        </b>
+                        <a href="#cancel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>cancel(event: MouseEvent)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/components/shared/layout/sheet/sw-sheet.component.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>MouseEvent</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="confirm"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            confirm
+                        </b>
+                        <a href="#confirm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>confirm(event: MouseEvent)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/components/shared/layout/sheet/sw-sheet.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>MouseEvent</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+import { MatBottomSheetRef } from &#x27;@angular/material/bottom-sheet&#x27;;
+
+@Component({
+  selector: &#x27;sw-sheet&#x27;,
+  template: &#x60;&lt;mat-nav-list&gt;
+                    &lt;a mat-list-item (click)&#x3D;&quot;confirm($event)&quot; style&#x3D;&quot;background-color: #00fba730;&quot;&gt;
+                      &lt;span mat-line&gt;Nova versão disponível!&lt;/span&gt;
+                      &lt;span mat-line&gt;Atualizar!&lt;/span&gt;
+                    &lt;/a&gt;
+
+                    &lt;a mat-list-item (click)&#x3D;&quot;cancel($event)&quot;&gt;
+                      &lt;span mat-line&gt;Agora não!&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/mat-nav-list&gt;
+                &#x60; })
+// tslint:disable-next-line:member-ordering
+export class SWSheetComponent {
+
+  constructor(private _swSheetRef: MatBottomSheetRef&lt;SWSheetComponent&gt;) { }
+
+  public confirm(event: MouseEvent): void {
+    this._swSheetRef.dismiss();
+    event.preventDefault();
+    window.location.reload();
+  }
+
+  public cancel(event: MouseEvent): void {
+    this._swSheetRef.dismiss();
+    event.preventDefault();
+  }
+}
+</code></pre>
+    </div>
+
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-nav-list>                    <a mat-list-item (click)="confirm($event)" style="background-color: #00fba730;">                      <span mat-line>Nova versão disponível!</span>                      <span mat-line>Atualizar!</span>                    </a>                    <a mat-list-item (click)="cancel($event)">                      <span mat-line>Agora não!</span>                    </a>                </mat-nav-list></div>'
+    var COMPONENTS = [{'name': 'AdministracaoComponent', 'selector': ''},{'name': 'AdministracaoFormComponent', 'selector': 'administracao-form'},{'name': 'AdministracaoInfoComponent', 'selector': 'administracao-info'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationComponent', 'selector': ''},{'name': 'BottomSheetPrescription', 'selector': 'bottom-sheet-prescription'},{'name': 'CadastromedComponent', 'selector': ''},{'name': 'DispensacaoComponent', 'selector': ''},{'name': 'DispensacaoFormComponent', 'selector': 'dispensacao-form'},{'name': 'ElementListComponent', 'selector': 'element-list'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IntercambialidadeComponent', 'selector': 'intercambialidade'},{'name': 'IntercambialidadeDialogComponent', 'selector': 'intercambialidade-dialog'},{'name': 'MedicamentoComponent', 'selector': 'medicamento'},{'name': 'NotificacaoComponent', 'selector': ''},{'name': 'NotificacaoFormComponent', 'selector': 'notificacao-form'},{'name': 'PacienteMedicoComponent', 'selector': 'paciente-medico'},{'name': 'PageNotFoundComponent', 'selector': ''},{'name': 'PrescricaoComponent', 'selector': 'prescricao'},{'name': 'RastreabilidadeComponent', 'selector': 'rastreabilidade'},{'name': 'RastreabilidadeDialogComponent', 'selector': 'rastreabilidade-dialog'},{'name': 'ResponsavelComponent', 'selector': 'responsavel'},{'name': 'SheetComponent', 'selector': 'element-sheet'},{'name': 'SidenavHeaderComponent', 'selector': 'sidenav-menu'},{'name': 'SWSheetComponent', 'selector': 'sw-sheet'},{'name': 'ToolbarHeaderComponent', 'selector': 'toolbar-header'}];
+    var DIRECTIVES = [{'name': 'DisableControlDirective', 'selector': '[disableControl]'},{'name': 'HighlightDirective', 'selector': '[highlight]'},{'name': 'MaskPhoneDirective', 'selector': '[formControlName][mask-phone]'}];
+    var ACTUAL_COMPONENT = {'name': 'SWSheetComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SWSheetComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
