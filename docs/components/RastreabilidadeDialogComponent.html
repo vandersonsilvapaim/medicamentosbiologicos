@@ -61,7 +61,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts</code>
+    <code>src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts</code>
 </p>
 
 
@@ -132,6 +132,10 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier">Public</span>
+                                <a href="#_form">_form</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
                                 <a href="#alert">alert</a>
                             </li>
                             <li>
@@ -163,15 +167,23 @@
                                 <a href="#log">log</a>
                             </li>
                             <li>
-                                    <span class="modifier">Public</span>
-                                <a href="#name">name</a>
+                                    <span class="modifier">Private</span>
+                                <a href="#paciente_selected">paciente_selected</a>
                             </li>
                             <li>
                                 <a href="#pdf">pdf</a>
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
-                                <a href="#row">row</a>
+                                <a href="#service">service</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#settings">settings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#values">values</a>
                             </li>
                         </ul>
                     </td>
@@ -187,7 +199,26 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier">Public</span>
+                                <a href="#builderData">builderData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#elementListEvent">elementListEvent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
                                 <a href="#export">export</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#formEvent">formEvent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getRastreabilidade">getRastreabilidade</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
                             </li>
                             <li>
                                 <a href="#ngOnDestroy">ngOnDestroy</a>
@@ -213,12 +244,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(data: literal type, alert: <a href="../injectables/AlertService.html">AlertService</a>, el: <a href="https://angular.io/api/core/ElementRef" target="_blank">ElementRef</a>, log: <a href="../injectables/LogService.html">LogService</a>, file: <a href="../injectables/FileService.html">FileService</a>)</code>
+<code>constructor(data, alert: <a href="../injectables/AlertService.html">AlertService</a>, el: <a href="https://angular.io/api/core/ElementRef" target="_blank">ElementRef</a>, log: <a href="../injectables/LogService.html">LogService</a>, file: <a href="../injectables/FileService.html">FileService</a>, service: <a href="../injectables/BiologicosService.html">BiologicosService</a>, sheet: MatBottomSheet, sheetService: <a href="../injectables/SheetService.html">SheetService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:29</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:33</a></div>
                             </td>
                         </tr>
 
@@ -239,7 +270,6 @@
                                                         <td>data</td>
                                                   
                                                         <td>
-                                                                    <code>literal type</code>
                                                         </td>
                                                   
                                                     <td>
@@ -295,6 +325,42 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>service</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BiologicosService.html" target="_self" >BiologicosService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sheet</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatBottomSheet</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sheetService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SheetService.html" target="_self" >SheetService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -313,6 +379,146 @@
     <h3 id="methods">
         Methods
     </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="builderData"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            builderData
+                        </b>
+                        <a href="#builderData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>builderData(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="143"
+                            class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:143</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/ControlBuilder.html" target="_self" >ControlBuilder[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="elementListEvent"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            elementListEvent
+                        </b>
+                        <a href="#elementListEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>elementListEvent(e: <a href="../interfaces/ElementListEvents.html">ElementListEvents</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="118"
+                            class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:118</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>e</td>
+                                    <td>
+                                                <code><a href="../interfaces/ElementListEvents.html" target="_self" >ElementListEvents</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -337,8 +543,185 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="59"
-                            class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:59</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="278"
+                            class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:278</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formEvent"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            formEvent
+                        </b>
+                        <a href="#formEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>formEvent(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="135"
+                            class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:135</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRastreabilidade"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            getRastreabilidade
+                        </b>
+                        <a href="#getRastreabilidade"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getRastreabilidade(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Methods</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <b>
+                            ngAfterViewInit
+                        </b>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:64</a></div>
                 </td>
             </tr>
 
@@ -376,8 +759,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="50"
-                            class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:50</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:53</a></div>
                 </td>
             </tr>
 
@@ -415,8 +798,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="46"
-                            class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:46</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:49</a></div>
                 </td>
             </tr>
 
@@ -442,6 +825,28 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
+                        <a name="_form"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            _form</b>
+                            <a href="#_form"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
                         <a name="alert"></a>
                         <span class="name">
                             <b>
@@ -459,7 +864,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:37</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:38</a></div>
                             </td>
                         </tr>
 
@@ -481,12 +886,6 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code>literal type</code>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
                             <b>Decorators : </b>
                             <br />
                             <code>
@@ -496,7 +895,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:33</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:37</a></div>
                             </td>
                         </tr>
 
@@ -524,7 +923,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:38</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:39</a></div>
                             </td>
                         </tr>
 
@@ -546,7 +945,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:25</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:27</a></div>
                             </td>
                         </tr>
 
@@ -574,7 +973,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:40</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:41</a></div>
                             </td>
                         </tr>
 
@@ -596,7 +995,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:29</a></div>
                             </td>
                         </tr>
 
@@ -618,7 +1017,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:29</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:28</a></div>
                             </td>
                         </tr>
 
@@ -646,7 +1045,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:39</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:40</a></div>
                             </td>
                         </tr>
 
@@ -657,18 +1056,18 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="name"></a>
+                        <a name="paciente_selected"></a>
                         <span class="name">
                             <b>
-                                <span class="modifier">Public</span>
-                            name</b>
-                            <a href="#name"><span class="icon ion-ios-link"></span></a>
+                                <span class="modifier">Private</span>
+                            paciente_selected</b>
+                            <a href="#paciente_selected"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:28</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:32</a></div>
                             </td>
                         </tr>
 
@@ -698,7 +1097,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:25</a></div>
                             </td>
                         </tr>
 
@@ -709,18 +1108,68 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="row"></a>
+                        <a name="service"></a>
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            row</b>
-                            <a href="#row"><span class="icon ion-ios-link"></span></a>
+                            service</b>
+                            <a href="#service"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/BiologicosService.html" target="_self" >BiologicosService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="settings"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            settings</b>
+                            <a href="#settings"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog.component.ts:26</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="values"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            values</b>
+                            <a href="#values"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/rastreabilidade/rastreabilidade-dialog/rastreabilidade-dialog.component.ts:30</a></div>
                             </td>
                         </tr>
 
@@ -733,16 +1182,18 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { of, throwError } from &#x27;rxjs&#x27;;
-import { catchError, map, takeWhile } from &#x27;rxjs/operators&#x27;;
-
-import { formatDate } from &#x27;@angular/common&#x27;;
-import { Component, ElementRef, Inject, OnDestroy, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ElementRef, Inject, OnDestroy, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { MatBottomSheet } from &#x27;@angular/material/bottom-sheet&#x27;;
 import { MAT_DIALOG_DATA } from &#x27;@angular/material/dialog&#x27;;
+import { of } from &#x27;rxjs&#x27;;
+import { ControlBuilder } from &#x27;../../shared&#x27;;
+import { ElementListEvents } from &#x27;../../shared/layout/element-list&#x27;;
+import { SheetComponent, SheetService } from &#x27;../../shared/layout/sheet&#x27;;
 
-import { AlertService } from &#x27;../shared/services/alert.service&#x27;;
-import { FileService } from &#x27;../shared/services/file.service&#x27;;
-import { LogService } from &#x27;../shared/services/log.service&#x27;;
+import { AlertService } from &#x27;../../shared/services/alert.service&#x27;;
+import { BiologicosService } from &#x27;../../shared/services/biologicos.service&#x27;;
+import { FileService } from &#x27;../../shared/services/file.service&#x27;;
+import { LogService } from &#x27;../../shared/services/log.service&#x27;;
 
 @Component({
   selector: &#x27;rastreabilidade-dialog&#x27;,
@@ -758,24 +1209,25 @@ export class RastreabilidadeDialogComponent implements OnInit, OnDestroy {
   @ViewChild(&#x27;pdf&#x27;) pdf;
 
   public fb;
-  public row;
-  public href;
-  public name;
   private isLive;
+  public href;
+  public values;
+  public settings;
+  private paciente_selected;
+  public _form;
 
   constructor(
     @Inject(MAT_DIALOG_DATA)
-    public data: {
-      row: any;
-      name: string;
-    },
+    public data,
     public alert: AlertService,
     public el: ElementRef,
     public log: LogService,
-    public file: FileService
+    public file: FileService,
+    public service: BiologicosService,
+    private sheet: MatBottomSheet,
+    private sheetService: SheetService
   ) {
-    this.row &#x3D; data.row;
-    this.name &#x3D; data.name;
+    this.paciente_selected &#x3D; data;
   }
 
   ngOnInit(): void {
@@ -785,18 +1237,234 @@ export class RastreabilidadeDialogComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.isLive &#x3D; false;
     this.fb &#x3D; null;
-    this.row &#x3D; null;
     this.href &#x3D; null;
-    this.name &#x3D; null;
+    this.paciente_selected &#x3D; null;
+    this._form &#x3D; null;
     this.isLive &#x3D; null;
+    this.values &#x3D; null;
+    this.settings &#x3D; null;
+  }
+
+  ngAfterViewInit(): void {
+
+    this.isLive &#x3D; true;
+
+    this.settings &#x3D; of({
+      show_action: {
+        search: true,
+        edit: false,
+        remove: false,
+        radio: false,
+        name: &#x27;&#x27;,
+        consulta_label: &#x27;Consultar&#x27;,
+        consulta_placeholder: &#x27;Digite aqui algo relacionado a listagem&#x27;
+      }
+    });
+    const _lresult &#x3D; [];
+    let datas &#x3D; this.service.datas.filter(({ patient }) &#x3D;&gt; patient.id &#x3D;&#x3D; this.paciente_selected.id &amp;&amp; patient.cpf &#x3D;&#x3D; this.paciente_selected.cpf);
+
+    if (this._form &amp;&amp; this._form.paciente_selected) {
+      const paciente_selected &#x3D; this._form.paciente_selected;
+      datas &#x3D; this.service.datas.filter(({ patient }) &#x3D;&gt; patient.id &#x3D;&#x3D; paciente_selected.id &amp;&amp; patient.cpf &#x3D;&#x3D; paciente_selected.cpf);
+    }
+
+    datas.forEach((data) &#x3D;&gt; {
+      const _v &#x3D; this.builderData(data);
+      _lresult.push(_v);
+    });
+    this.values &#x3D; of({ push: _lresult });
+
+  }
+
+  /**
+   * Methods
+   */
+
+  private getRastreabilidade(data){
+    const result &#x3D; [];
+    if(data.dispensacao){
+      if(data.dispensacao.disponivel){
+        result.push({value: &#x27;check_circle&#x27;, descricao: &#x27;Medicamento prescrito e dispensado&#x27;});
+      } else {
+        result.push({value: &#x27;compare_arrows&#x27;, descricao: &#x27;Medicamento dispensado diferente do prescrito&#x27;});
+      }
+    }
+
+    if(data.notificacao){
+      result.push({value: &#x27;report_problem&#x27;, descricao: &#x27;Evento Adverso Relatado&#x27;});
+    } else if (data.administracao) {
+      result.push({value: &#x27;change_history&#x27;, descricao: &#x27;Sem relato de evento adverso&#x27;});
+    }
+
+    return JSON.stringify(result);
+  }
+
+  public elementListEvent(e: ElementListEvents) {
+    if (e) {
+      if (e.view) {
+        // this._form &#x3D; this.service..find( (data) &#x3D;&gt; e.view.id_ad &#x3D;&#x3D; data.id_prescription);
+      } else if (e.filteredData) {
+        const _info &#x3D; {
+          desc1: &#x60;&quot;${e.filteredData}&quot; não foi encontrado !&#x60;,
+          desc2: &#x60;Por favor verifique se a informação esta correta ! &#x60;
+        };
+        this.sheetService.setInfo(_info);
+        this.sheet.open(SheetComponent);
+      } else if (e.error) {
+        this.alert.showToaster(LogService.LISTA_DE_CODIGOS_E_STATUS._1_INFORMATIVA);
+      }
+    }
+  }
+
+  public formEvent(event) {
+    if (event) {
+      if (event.back_stepper) {
+        this._form &#x3D; null;
+      }
+    }
+  }
+
+  public builderData(data): ControlBuilder[] {
+    return [
+      {
+        displayed: &#x27;ID&#x27;, placeholder: &#x27;ID&#x27;,
+        favorite: &#x27;0&#x27;, name: &#x27;id&#x27;, value: data.id,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Id do paciente&#x27;, placeholder: &#x27;Id do paciente&#x27;,
+        favorite: &#x27;1&#x27;, name: &#x27;id_paciente&#x27;, value: data.patient.id,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Nome do paciente&#x27;, placeholder: &#x27;Nome do paciente&#x27;,
+        favorite: &#x27;2&#x27;, name: &#x27;paciente&#x27;, value: data.patient.nome,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Registro Hospitalar&#x27;, placeholder: &#x27;Registro Hospitalar&#x27;,
+        favorite: &#x27;3&#x27;, name: &#x27;reg_hosp&#x27;, value: data.patient.reg_hosp,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Imagem do perfil&#x27;, placeholder: &#x27;Imagem do perfil&#x27;,
+        favorite: null, name: &#x27;img&#x27;, value: data.patient.img,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Genero&#x27;, placeholder: &#x27;Genero&#x27;,
+        favorite: null, name: &#x27;genero&#x27;, value: data.patient.genero,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Data de nascimento&#x27;, placeholder: &#x27;Data de nascimento&#x27;,
+        favorite: null, name: &#x27;dt_nascimento&#x27;, value: data.patient.dt_nascimento,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;CPF&#x27;, placeholder: &#x27;CPF&#x27;,
+        favorite: null, name: &#x27;cpf&#x27;, value: data.patient.cpf,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Telefone&#x27;, placeholder: &#x27;Telefone&#x27;,
+        favorite: null, name: &#x27;telefone&#x27;, value: data.patient.telefone,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Endereco&#x27;, placeholder: &#x27;Endereco&#x27;,
+        favorite: null, name: &#x27;endereco&#x27;, value: data.patient.endereco,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Id do emitente&#x27;, placeholder: &#x27;Id do emitente&#x27;,
+        favorite: null, name: &#x27;doctor_id&#x27;, value: data.doctor.id,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Nome do emitente&#x27;, placeholder: &#x27;Nome do emitente&#x27;,
+        favorite: &#x27;4&#x27;, name: &#x27;doctor_name&#x27;, value: data.doctor.nome,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Formação do emitente&#x27;, placeholder: &#x27;Formação do emitente&#x27;,
+        favorite: null, name: &#x27;doctor_formacao&#x27;, value: data.doctor.formacao,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Nascimento do emitente&#x27;, placeholder: &#x27;Nascimento do emitente&#x27;,
+        favorite: null, name: &#x27;doctor_dt_nascimento&#x27;, value: data.doctor.dt_nascimento,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Conselho do emitente&#x27;, placeholder: &#x27;Conselho do emitente&#x27;,
+        favorite: null, name: &#x27;doctor_conselho&#x27;, value: data.doctor.conselho,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Telefone do emitente&#x27;, placeholder: &#x27;Telefone do emitente&#x27;,
+        favorite: null, name: &#x27;doctor_telefone&#x27;, value: data.doctor.telefone,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Data e Hora&#x27;, placeholder: &#x27;Data e Hora&#x27;,
+        favorite: &#x27;5&#x27;, name: &#x27;time&#x27;, value: &#x60;${data.hospital.data} - ${data.hospital.hora}&#x60;,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Hospital&#x27;, placeholder: &#x27;Hospital&#x27;,
+        favorite: null, name: &#x27;nome_hospital&#x27;, value: data.hospital.nome,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Medicamento&#x27;, placeholder: &#x27;Medicamento&#x27;,
+        favorite: &#x27;6&#x27;, name: &#x27;medicine&#x27;, value: &#x60;Biologico ${data.medicine}&#x60;,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Forma farmaceutica&#x27;, placeholder: &#x27;Forma farmaceutica&#x27;,
+        favorite: null, name: &#x27;pharmaceutical_form&#x27;, value: &#x60;Dose: ${data.pharmaceutical_form.dose}, Unidade de medida: ${data.pharmaceutical_form.unit}, Apresentação: ${data.pharmaceutical_form.presentation} &#x60;,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Posologia&#x27;, placeholder: &#x27;Posologia&#x27;,
+        favorite: null, name: &#x27;dosage&#x27;, value: &#x60;Via de administração: ${data.dosage.route}, Intervalo: ${data.dosage.intervalo}, Duração: ${data.dosage.duracao} &#x60;,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Diluir&#x27;, placeholder: &#x27;Diluir&#x27;,
+        favorite: null, name: &#x27;dilute&#x27;, value: data.dilute,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;notificacao&#x27;, placeholder: &#x27;notificacao&#x27;,
+        favorite: null, name: &#x27;notificacao&#x27;, value: JSON.stringify(data?.notificacao),
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;dispensacao&#x27;, placeholder: &#x27;dispensacao&#x27;,
+        favorite: null, name: &#x27;dispensacao&#x27;, value: JSON.stringify(data?.dispensacao),
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;administracao&#x27;, placeholder: &#x27;administracao&#x27;,
+        favorite: null, name: &#x27;administracao&#x27;, value: JSON.stringify(data?.administracao),
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Rastreabilidade&#x27;, placeholder: &#x27;&#x27;,
+        favorite: &#x27;7&#x27;, name: &#x27;icons&#x27;, value: this.getRastreabilidade(data),
+        validators: [], disabled: true, hideRequired: true
+      },
+    ];
   }
 
   public export() {
 
-    const _html &#x3D; this.pdf.el.nativeElement;
+    const _html &#x3D; this.pdf.nativeElement;
 
     if (this.isLive) {
-      this.file.export.pdfByHtml(_html, this.name);
+      this.file.export.pdfByHtml(_html, this.paciente_selected.cpf);
     }
 
   }
@@ -814,12 +1482,27 @@ export class RastreabilidadeDialogComponent implements OnInit, OnDestroy {
     &lt;/button&gt;
   &lt;/div&gt;
   &lt;br&gt;
-  &lt;h2 class&#x3D;&quot;hraleway&quot; style&#x3D;&quot;color: #0376bb!important;&quot;&gt;
-    Rastreabilidade
-  &lt;/h2&gt;
+  &lt;div class&#x3D;&quot;container-margin&quot; id&#x3D;&quot;pdf&quot; #pdf &gt;
+    &lt;div class&#x3D;&quot;division&quot; style&#x3D;&quot;padding: 5px 5px 0 10px; margin-left: 10%; margin-right: 10%;margin-top: 7px;&quot;&gt;
 
-  &lt;!-- &lt;rastreabilidade id&#x3D;&quot;pdf&quot; #pdf [form]&#x3D;&quot;fb&quot;&gt;&lt;/rastreabilidade&gt; --&gt;
+      &lt;h2 class&#x3D;&quot;hraleway&quot; style&#x3D;&quot;color: #0376bb!important;&quot;&gt;
+        &lt;span style&#x3D;&quot;position: relative;&quot;&gt;
+          &lt;mat-icon style&#x3D;&quot;font-size: 28px; color: #0376bb; position: absolute; left: -28px; padding-top: 3px;&quot;&gt;
+            all_inbox
+          &lt;/mat-icon&gt;
+        &lt;/span&gt;
+        Rastreabilidade do Paciente
+      &lt;/h2&gt;
 
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;division&quot; [class.hide]&#x3D;&quot;_form&quot; style&#x3D;&quot;padding-bottom: 17px;&quot;&gt;
+      &lt;element-list [settings]&#x3D;&quot;settings&quot; [values]&#x3D;&quot;values&quot; (action)&#x3D;&quot;elementListEvent($event)&quot;&gt;&lt;/element-list&gt;
+    &lt;/div&gt;
+
+    &lt;!-- &lt;rastreabilidade-info [forms]&#x3D;&quot;_form&quot; (action)&#x3D;&quot;formEvent($event)&quot; [class.hide]&#x3D;&quot;!_form&quot;&gt;&lt;/rastreabilidade-info&gt; --&gt;
+
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
     </div>
@@ -855,7 +1538,7 @@ export class RastreabilidadeDialogComponent implements OnInit, OnDestroy {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div style="margin: 0px; padding: 0px; width: 100%; height: 600px; overflow: visible;">  <div style="float: right; padding-right: 5px;">    <button aria-label="Exportar em \'.pdf\'" (click)="export()" mat-button      style="background-color: #4CAF50; color: #ffffff; height: 24px; line-height: 0px; cursor: pointer;">      Exportar em \'.pdf\'    </button>  </div>  <br>  <h2 class="hraleway" style="color: #0376bb!important;">    Rastreabilidade  </h2>  <!-- <rastreabilidade id="pdf" #pdf [form]="fb"></rastreabilidade> --></div></div>'
+        var COMPONENT_TEMPLATE = '<div><div style="margin: 0px; padding: 0px; width: 100%; height: 600px; overflow: visible;">  <div style="float: right; padding-right: 5px;">    <button aria-label="Exportar em \'.pdf\'" (click)="export()" mat-button      style="background-color: #4CAF50; color: #ffffff; height: 24px; line-height: 0px; cursor: pointer;">      Exportar em \'.pdf\'    </button>  </div>  <br>  <div class="container-margin" id="pdf" #pdf >    <div class="division" style="padding: 5px 5px 0 10px; margin-left: 10%; margin-right: 10%;margin-top: 7px;">      <h2 class="hraleway" style="color: #0376bb!important;">        <span style="position: relative;">          <mat-icon style="font-size: 28px; color: #0376bb; position: absolute; left: -28px; padding-top: 3px;">            all_inbox          </mat-icon>        </span>        Rastreabilidade do Paciente      </h2>    </div>    <div class="division" [class.hide]="_form" style="padding-bottom: 17px;">      <element-list [settings]="settings" [values]="values" (action)="elementListEvent($event)"></element-list>    </div>    <!-- <rastreabilidade-info [forms]="_form" (action)="formEvent($event)" [class.hide]="!_form"></rastreabilidade-info> -->  </div></div></div>'
     var COMPONENTS = [{'name': 'AdministracaoComponent', 'selector': ''},{'name': 'AdministracaoFormComponent', 'selector': 'administracao-form'},{'name': 'AdministracaoInfoComponent', 'selector': 'administracao-info'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationComponent', 'selector': ''},{'name': 'BottomSheetPrescription', 'selector': 'bottom-sheet-prescription'},{'name': 'CadastromedComponent', 'selector': ''},{'name': 'DispensacaoComponent', 'selector': ''},{'name': 'DispensacaoFormComponent', 'selector': 'dispensacao-form'},{'name': 'ElementListComponent', 'selector': 'element-list'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IntercambialidadeComponent', 'selector': 'intercambialidade'},{'name': 'IntercambialidadeDialogComponent', 'selector': 'intercambialidade-dialog'},{'name': 'MedicamentoComponent', 'selector': 'medicamento'},{'name': 'NotificacaoComponent', 'selector': ''},{'name': 'NotificacaoFormComponent', 'selector': 'notificacao-form'},{'name': 'PacienteMedicoComponent', 'selector': 'paciente-medico'},{'name': 'PageNotFoundComponent', 'selector': ''},{'name': 'PrescricaoComponent', 'selector': 'prescricao'},{'name': 'RastreabilidadeComponent', 'selector': 'rastreabilidade'},{'name': 'RastreabilidadeDialogComponent', 'selector': 'rastreabilidade-dialog'},{'name': 'ResponsavelComponent', 'selector': 'responsavel'},{'name': 'SheetComponent', 'selector': 'element-sheet'},{'name': 'SidenavHeaderComponent', 'selector': 'sidenav-menu'},{'name': 'SWSheetComponent', 'selector': 'sw-sheet'},{'name': 'ToolbarHeaderComponent', 'selector': 'toolbar-header'}];
     var DIRECTIVES = [{'name': 'DisableControlDirective', 'selector': '[disableControl]'},{'name': 'HighlightDirective', 'selector': '[highlight]'},{'name': 'MaskPhoneDirective', 'selector': '[formControlName][mask-phone]'}];
     var ACTUAL_COMPONENT = {'name': 'RastreabilidadeDialogComponent'};

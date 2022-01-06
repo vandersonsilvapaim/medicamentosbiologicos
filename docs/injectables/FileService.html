@@ -426,22 +426,22 @@ this.fileService.export.xlsx().subscrib</code></pre></div><hr>
 
         pdfByHtml: (nativeElement, fileName: string) &#x3D;&gt; {
             try {
-                // const pdf &#x3D; new jspdf();
+                const pdf &#x3D; new jspdf();
 
-                // pdf.fromHTML(
-                //     nativeElement.innerHTML, 30, 15,
-                //     { &#x27;width&#x27;: 150, &#x27;elementHandlers&#x27;: { &#x27;#editor&#x27;: (element, renderer) &#x3D;&gt; true } },
-                //     () &#x3D;&gt; {
-                //         pdf.save(&#x60;${fileName}_export_${new Date().getTime()}.pdf&#x60;);
-                //     },
-                //     0
-                // );
+                pdf.fromHTML(
+                    nativeElement.innerHTML, 30, 15,
+                    { &#x27;width&#x27;: 150, &#x27;elementHandlers&#x27;: { &#x27;#editor&#x27;: (element, renderer) &#x3D;&gt; true } },
+                    () &#x3D;&gt; {
+                        pdf.save(&#x60;${fileName}_export_${new Date().getTime()}.pdf&#x60;);
+                    },
+                    0
+                );
 
-                // this.log.INFO({
-                //     component: &#x27;FileService&#x27;,
-                //     method: &#x27;export.pdfByHtml&#x27;,
-                //     value: &#x60;${fileName}_export_${new Date().getTime()}.pdf Gerado com Sucesso!&#x60;
-                // });
+                this.log.INFO({
+                    component: &#x27;FileService&#x27;,
+                    method: &#x27;export.pdfByHtml&#x27;,
+                    value: &#x60;${fileName}_export_${new Date().getTime()}.pdf Gerado com Sucesso!&#x60;
+                });
 
             } catch (e) {
                 this.log.SEVERE({
@@ -636,7 +636,7 @@ import { Injectable } from &#x27;@angular/core&#x27;;
 
 import { LogService } from &#x27;./log.service&#x27;;
 
-// import * as jspdf from &#x27;@jspdf.min&#x27;;
+import * as jspdf from &#x27;@jspdf.min&#x27;;
 type AOA &#x3D; any[][];
 
 // import * as svg2pdf from &#x27;svg2pdf&#x27;;
@@ -849,22 +849,22 @@ export class FileService {
 
         pdfByHtml: (nativeElement, fileName: string) &#x3D;&gt; {
             try {
-                // const pdf &#x3D; new jspdf();
+                const pdf &#x3D; new jspdf();
 
-                // pdf.fromHTML(
-                //     nativeElement.innerHTML, 30, 15,
-                //     { &#x27;width&#x27;: 150, &#x27;elementHandlers&#x27;: { &#x27;#editor&#x27;: (element, renderer) &#x3D;&gt; true } },
-                //     () &#x3D;&gt; {
-                //         pdf.save(&#x60;${fileName}_export_${new Date().getTime()}.pdf&#x60;);
-                //     },
-                //     0
-                // );
+                pdf.fromHTML(
+                    nativeElement.innerHTML, 30, 15,
+                    { &#x27;width&#x27;: 150, &#x27;elementHandlers&#x27;: { &#x27;#editor&#x27;: (element, renderer) &#x3D;&gt; true } },
+                    () &#x3D;&gt; {
+                        pdf.save(&#x60;${fileName}_export_${new Date().getTime()}.pdf&#x60;);
+                    },
+                    0
+                );
 
-                // this.log.INFO({
-                //     component: &#x27;FileService&#x27;,
-                //     method: &#x27;export.pdfByHtml&#x27;,
-                //     value: &#x60;${fileName}_export_${new Date().getTime()}.pdf Gerado com Sucesso!&#x60;
-                // });
+                this.log.INFO({
+                    component: &#x27;FileService&#x27;,
+                    method: &#x27;export.pdfByHtml&#x27;,
+                    value: &#x60;${fileName}_export_${new Date().getTime()}.pdf Gerado com Sucesso!&#x60;
+                });
 
             } catch (e) {
                 this.log.SEVERE({

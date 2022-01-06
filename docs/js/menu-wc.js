@@ -288,16 +288,49 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/HomeRoutingModule.html" data-type="entity-link">HomeRoutingModule</a>
                             </li>
                             <li class="link">
-                                <a href="modules/IntercambialidadeModule.html" data-type="entity-link">IntercambialidadeModule</a>
+                                <a href="modules/IntercambialidadeDialogModule.html" data-type="entity-link">IntercambialidadeDialogModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-IntercambialidadeModule-357e60f639f43fb39ed813f00510885c"' : 'data-target="#xs-components-links-module-IntercambialidadeModule-357e60f639f43fb39ed813f00510885c"' }>
+                                            'data-target="#components-links-module-IntercambialidadeDialogModule-eb4abef2ee43de3a0b359bf085f167f5"' : 'data-target="#xs-components-links-module-IntercambialidadeDialogModule-eb4abef2ee43de3a0b359bf085f167f5"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-IntercambialidadeModule-357e60f639f43fb39ed813f00510885c"' :
-                                            'id="xs-components-links-module-IntercambialidadeModule-357e60f639f43fb39ed813f00510885c"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-IntercambialidadeDialogModule-eb4abef2ee43de3a0b359bf085f167f5"' :
+                                            'id="xs-components-links-module-IntercambialidadeDialogModule-eb4abef2ee43de3a0b359bf085f167f5"' }>
+                                            <li class="link">
+                                                <a href="components/IntercambialidadeDialogComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">IntercambialidadeDialogComponent</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                <li class="chapter inner">
+                                    <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                        'data-target="#injectables-links-module-IntercambialidadeDialogModule-eb4abef2ee43de3a0b359bf085f167f5"' : 'data-target="#xs-injectables-links-module-IntercambialidadeDialogModule-eb4abef2ee43de3a0b359bf085f167f5"' }>
+                                        <span class="icon ion-md-arrow-round-down"></span>
+                                        <span>Injectables</span>
+                                        <span class="icon ion-ios-arrow-down"></span>
+                                    </div>
+                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-IntercambialidadeDialogModule-eb4abef2ee43de3a0b359bf085f167f5"' :
+                                        'id="xs-injectables-links-module-IntercambialidadeDialogModule-eb4abef2ee43de3a0b359bf085f167f5"' }>
+                                        <li class="link">
+                                            <a href="injectables/BiologicosService.html"
+                                                data-type="entity-link" data-context="sub-entity" data-context-id="modules" }>BiologicosService</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/IntercambialidadeModule.html" data-type="entity-link">IntercambialidadeModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' : 'data-target="#xs-components-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' :
+                                            'id="xs-components-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' }>
                                             <li class="link">
                                                 <a href="components/IntercambialidadeComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">IntercambialidadeComponent</a>
@@ -306,13 +339,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                     </li>
                                 <li class="chapter inner">
                                     <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                        'data-target="#injectables-links-module-IntercambialidadeModule-357e60f639f43fb39ed813f00510885c"' : 'data-target="#xs-injectables-links-module-IntercambialidadeModule-357e60f639f43fb39ed813f00510885c"' }>
+                                        'data-target="#injectables-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' : 'data-target="#xs-injectables-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' }>
                                         <span class="icon ion-md-arrow-round-down"></span>
                                         <span>Injectables</span>
                                         <span class="icon ion-ios-arrow-down"></span>
                                     </div>
-                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-IntercambialidadeModule-357e60f639f43fb39ed813f00510885c"' :
-                                        'id="xs-injectables-links-module-IntercambialidadeModule-357e60f639f43fb39ed813f00510885c"' }>
+                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' :
+                                        'id="xs-injectables-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' }>
                                         <li class="link">
                                             <a href="injectables/BiologicosService.html"
                                                 data-type="entity-link" data-context="sub-entity" data-context-id="modules" }>BiologicosService</a>
@@ -428,13 +461,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/PacienteMedicoModule.html" data-type="entity-link">PacienteMedicoModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-PacienteMedicoModule-259bede30be53e9aef585940340efaac"' : 'data-target="#xs-components-links-module-PacienteMedicoModule-259bede30be53e9aef585940340efaac"' }>
+                                            'data-target="#components-links-module-PacienteMedicoModule-fa4231610d3a26d8242cf3eb11c93335"' : 'data-target="#xs-components-links-module-PacienteMedicoModule-fa4231610d3a26d8242cf3eb11c93335"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-PacienteMedicoModule-259bede30be53e9aef585940340efaac"' :
-                                            'id="xs-components-links-module-PacienteMedicoModule-259bede30be53e9aef585940340efaac"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-PacienteMedicoModule-fa4231610d3a26d8242cf3eb11c93335"' :
+                                            'id="xs-components-links-module-PacienteMedicoModule-fa4231610d3a26d8242cf3eb11c93335"' }>
                                             <li class="link">
                                                 <a href="components/PacienteMedicoComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">PacienteMedicoComponent</a>
@@ -485,16 +518,49 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/PrescricaoRoutingModule.html" data-type="entity-link">PrescricaoRoutingModule</a>
                             </li>
                             <li class="link">
-                                <a href="modules/RastreabilidadeModule.html" data-type="entity-link">RastreabilidadeModule</a>
+                                <a href="modules/RastreabilidadeDialogModule.html" data-type="entity-link">RastreabilidadeDialogModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-RastreabilidadeModule-36ddac5ae285aaa2a0a18f3dc7e47524"' : 'data-target="#xs-components-links-module-RastreabilidadeModule-36ddac5ae285aaa2a0a18f3dc7e47524"' }>
+                                            'data-target="#components-links-module-RastreabilidadeDialogModule-1561de61c66753a8a2f0a3225d82c9c8"' : 'data-target="#xs-components-links-module-RastreabilidadeDialogModule-1561de61c66753a8a2f0a3225d82c9c8"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-RastreabilidadeModule-36ddac5ae285aaa2a0a18f3dc7e47524"' :
-                                            'id="xs-components-links-module-RastreabilidadeModule-36ddac5ae285aaa2a0a18f3dc7e47524"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-RastreabilidadeDialogModule-1561de61c66753a8a2f0a3225d82c9c8"' :
+                                            'id="xs-components-links-module-RastreabilidadeDialogModule-1561de61c66753a8a2f0a3225d82c9c8"' }>
+                                            <li class="link">
+                                                <a href="components/RastreabilidadeDialogComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">RastreabilidadeDialogComponent</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                <li class="chapter inner">
+                                    <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                        'data-target="#injectables-links-module-RastreabilidadeDialogModule-1561de61c66753a8a2f0a3225d82c9c8"' : 'data-target="#xs-injectables-links-module-RastreabilidadeDialogModule-1561de61c66753a8a2f0a3225d82c9c8"' }>
+                                        <span class="icon ion-md-arrow-round-down"></span>
+                                        <span>Injectables</span>
+                                        <span class="icon ion-ios-arrow-down"></span>
+                                    </div>
+                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-RastreabilidadeDialogModule-1561de61c66753a8a2f0a3225d82c9c8"' :
+                                        'id="xs-injectables-links-module-RastreabilidadeDialogModule-1561de61c66753a8a2f0a3225d82c9c8"' }>
+                                        <li class="link">
+                                            <a href="injectables/BiologicosService.html"
+                                                data-type="entity-link" data-context="sub-entity" data-context-id="modules" }>BiologicosService</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/RastreabilidadeModule.html" data-type="entity-link">RastreabilidadeModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-RastreabilidadeModule-527c3291022feda347f86bd062b98e67"' : 'data-target="#xs-components-links-module-RastreabilidadeModule-527c3291022feda347f86bd062b98e67"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-RastreabilidadeModule-527c3291022feda347f86bd062b98e67"' :
+                                            'id="xs-components-links-module-RastreabilidadeModule-527c3291022feda347f86bd062b98e67"' }>
                                             <li class="link">
                                                 <a href="components/RastreabilidadeComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">RastreabilidadeComponent</a>
@@ -503,13 +569,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                     </li>
                                 <li class="chapter inner">
                                     <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                        'data-target="#injectables-links-module-RastreabilidadeModule-36ddac5ae285aaa2a0a18f3dc7e47524"' : 'data-target="#xs-injectables-links-module-RastreabilidadeModule-36ddac5ae285aaa2a0a18f3dc7e47524"' }>
+                                        'data-target="#injectables-links-module-RastreabilidadeModule-527c3291022feda347f86bd062b98e67"' : 'data-target="#xs-injectables-links-module-RastreabilidadeModule-527c3291022feda347f86bd062b98e67"' }>
                                         <span class="icon ion-md-arrow-round-down"></span>
                                         <span>Injectables</span>
                                         <span class="icon ion-ios-arrow-down"></span>
                                     </div>
-                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-RastreabilidadeModule-36ddac5ae285aaa2a0a18f3dc7e47524"' :
-                                        'id="xs-injectables-links-module-RastreabilidadeModule-36ddac5ae285aaa2a0a18f3dc7e47524"' }>
+                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-RastreabilidadeModule-527c3291022feda347f86bd062b98e67"' :
+                                        'id="xs-injectables-links-module-RastreabilidadeModule-527c3291022feda347f86bd062b98e67"' }>
                                         <li class="link">
                                             <a href="injectables/BiologicosService.html"
                                                 data-type="entity-link" data-context="sub-entity" data-context-id="modules" }>BiologicosService</a>
@@ -671,22 +737,6 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                 </ul>
                 </li>
-                    <li class="chapter">
-                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#components-links"' :
-                            'data-target="#xs-components-links"' }>
-                            <span class="icon ion-md-cog"></span>
-                            <span>Components</span>
-                            <span class="icon ion-ios-arrow-down"></span>
-                        </div>
-                        <ul class="links collapse " ${ isNormalMode ? 'id="components-links"' : 'id="xs-components-links"' }>
-                            <li class="link">
-                                <a href="components/IntercambialidadeDialogComponent.html" data-type="entity-link">IntercambialidadeDialogComponent</a>
-                            </li>
-                            <li class="link">
-                                <a href="components/RastreabilidadeDialogComponent.html" data-type="entity-link">RastreabilidadeDialogComponent</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#classes-links"' :
                             'data-target="#xs-classes-links"' }>
