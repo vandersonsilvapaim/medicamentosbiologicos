@@ -172,6 +172,10 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier">Public</span>
+                                <a href="#builderData">builderData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
                                 <a href="#elementListEvent">elementListEvent</a>
                             </li>
                             <li>
@@ -306,6 +310,74 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="builderData"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            builderData
+                        </b>
+                        <a href="#builderData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>builderData(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/app/components/notificacao/notificacao.component.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/ControlBuilder.html" target="_self" >ControlBuilder[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="elementListEvent"></a>
                     <span class="name">
                         <b>
@@ -326,8 +398,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="185"
-                            class="link-to-prism">src/app/components/notificacao/notificacao.component.ts:185</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/components/notificacao/notificacao.component.ts:74</a></div>
                 </td>
             </tr>
 
@@ -400,8 +472,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="202"
-                            class="link-to-prism">src/app/components/notificacao/notificacao.component.ts:202</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="91"
+                            class="link-to-prism">src/app/components/notificacao/notificacao.component.ts:91</a></div>
                 </td>
             </tr>
 
@@ -750,118 +822,7 @@ export class NotificacaoComponent implements AfterViewInit, OnDestroy {
     });
     const _lresult &#x3D; [];
     this.service.datas.filter(d &#x3D;&gt; d.administracao &amp;&amp; !d.notificacao).forEach((data) &#x3D;&gt; {
-      const _v: ControlBuilder[] &#x3D; [
-        {
-          displayed: &#x27;ID&#x27;, placeholder: &#x27;ID&#x27;,
-          favorite: &#x27;0&#x27;, name: &#x27;id_dispensacao&#x27;, value: data.id_dispensacao,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Id do paciente&#x27;, placeholder: &#x27;Id do paciente&#x27;,
-          favorite: &#x27;1&#x27;, name: &#x27;id_paciente&#x27;, value: data.patient.id,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Nome do paciente&#x27;, placeholder: &#x27;Nome do paciente&#x27;,
-          favorite: &#x27;2&#x27;, name: &#x27;paciente&#x27;, value: data.patient.nome,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Registro Hospitalar&#x27;, placeholder: &#x27;Registro Hospitalar&#x27;,
-          favorite: &#x27;3&#x27;, name: &#x27;reg_hosp&#x27;, value: data.patient.reg_hosp,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Imagem do perfil&#x27;, placeholder: &#x27;Imagem do perfil&#x27;,
-          favorite: null, name: &#x27;img&#x27;, value: data.patient.img,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Genero&#x27;, placeholder: &#x27;Genero&#x27;,
-          favorite: null, name: &#x27;genero&#x27;, value: data.patient.genero,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Data de nascimento&#x27;, placeholder: &#x27;Data de nascimento&#x27;,
-          favorite: null, name: &#x27;dt_nascimento&#x27;, value: data.patient.dt_nascimento,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;CPF&#x27;, placeholder: &#x27;CPF&#x27;,
-          favorite: null, name: &#x27;cpf&#x27;, value: data.patient.cpf,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Telefone&#x27;, placeholder: &#x27;Telefone&#x27;,
-          favorite: null, name: &#x27;telefone&#x27;, value: data.patient.telefone,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Endereco&#x27;, placeholder: &#x27;Endereco&#x27;,
-          favorite: null, name: &#x27;endereco&#x27;, value: data.patient.endereco,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Id do emitente&#x27;, placeholder: &#x27;Id do emitente&#x27;,
-          favorite: null, name: &#x27;doctor_id&#x27;, value: data.doctor.id,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Nome do emitente&#x27;, placeholder: &#x27;Nome do emitente&#x27;,
-          favorite: &#x27;4&#x27;, name: &#x27;doctor_name&#x27;, value: data.doctor.nome,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Formação do emitente&#x27;, placeholder: &#x27;Formação do emitente&#x27;,
-          favorite: null, name: &#x27;doctor_formacao&#x27;, value: data.doctor.formacao,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Nascimento do emitente&#x27;, placeholder: &#x27;Nascimento do emitente&#x27;,
-          favorite: null, name: &#x27;doctor_dt_nascimento&#x27;, value: data.doctor.dt_nascimento,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Conselho do emitente&#x27;, placeholder: &#x27;Conselho do emitente&#x27;,
-          favorite: null, name: &#x27;doctor_conselho&#x27;, value: data.doctor.conselho,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Telefone do emitente&#x27;, placeholder: &#x27;Telefone do emitente&#x27;,
-          favorite: null, name: &#x27;doctor_telefone&#x27;, value: data.doctor.telefone,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Data e Hora&#x27;, placeholder: &#x27;Data e Hora&#x27;,
-          favorite: &#x27;5&#x27;, name: &#x27;time&#x27;, value: &#x60;${data.hospital.data} - ${data.hospital.hora}&#x60;,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Hospital&#x27;, placeholder: &#x27;Hospital&#x27;,
-          favorite: null, name: &#x27;nome_hospital&#x27;, value: data.hospital.nome,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Medicamento&#x27;, placeholder: &#x27;Medicamento&#x27;,
-          favorite: &#x27;6&#x27;, name: &#x27;medicine&#x27;, value: &#x60;Biologico ${data.medicine}&#x60;,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Forma farmaceutica&#x27;, placeholder: &#x27;Forma farmaceutica&#x27;,
-          favorite: null, name: &#x27;pharmaceutical_form&#x27;, value: &#x60;Dose: ${data.pharmaceutical_form.dose}, Unidade de medida: ${data.pharmaceutical_form.unit}, Apresentação: ${data.pharmaceutical_form.presentation} &#x60;,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Posologia&#x27;, placeholder: &#x27;Posologia&#x27;,
-          favorite: null, name: &#x27;dosage&#x27;, value: &#x60;Via de notificação: ${data.dosage.route}, Intervalo: ${data.dosage.intervalo}, Duração: ${data.dosage.duracao} &#x60;,
-          validators: [], disabled: true, hideRequired: true
-        },
-        {
-          displayed: &#x27;Diluir&#x27;, placeholder: &#x27;Diluir&#x27;,
-          favorite: null, name: &#x27;dilute&#x27;, value: data.dilute,
-          validators: [], disabled: true, hideRequired: true
-        }
-      ];
+      const _v &#x3D; this.builderData(data);
       _lresult.push(_v);
     });
     this.values &#x3D; of({ push: _lresult });
@@ -898,6 +859,120 @@ export class NotificacaoComponent implements AfterViewInit, OnDestroy {
     }
   }
 
+  public builderData (data): ControlBuilder[] {
+    return [
+      {
+        displayed: &#x27;ID&#x27;, placeholder: &#x27;ID&#x27;,
+        favorite: &#x27;0&#x27;, name: &#x27;id_dispensacao&#x27;, value: data.id_dispensacao,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Id do paciente&#x27;, placeholder: &#x27;Id do paciente&#x27;,
+        favorite: &#x27;1&#x27;, name: &#x27;id_paciente&#x27;, value: data.patient.id,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Nome do paciente&#x27;, placeholder: &#x27;Nome do paciente&#x27;,
+        favorite: &#x27;2&#x27;, name: &#x27;paciente&#x27;, value: data.patient.nome,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Registro Hospitalar&#x27;, placeholder: &#x27;Registro Hospitalar&#x27;,
+        favorite: &#x27;3&#x27;, name: &#x27;reg_hosp&#x27;, value: data.patient.reg_hosp,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Imagem do perfil&#x27;, placeholder: &#x27;Imagem do perfil&#x27;,
+        favorite: null, name: &#x27;img&#x27;, value: data.patient.img,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Genero&#x27;, placeholder: &#x27;Genero&#x27;,
+        favorite: null, name: &#x27;genero&#x27;, value: data.patient.genero,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Data de nascimento&#x27;, placeholder: &#x27;Data de nascimento&#x27;,
+        favorite: null, name: &#x27;dt_nascimento&#x27;, value: data.patient.dt_nascimento,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;CPF&#x27;, placeholder: &#x27;CPF&#x27;,
+        favorite: null, name: &#x27;cpf&#x27;, value: data.patient.cpf,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Telefone&#x27;, placeholder: &#x27;Telefone&#x27;,
+        favorite: null, name: &#x27;telefone&#x27;, value: data.patient.telefone,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Endereco&#x27;, placeholder: &#x27;Endereco&#x27;,
+        favorite: null, name: &#x27;endereco&#x27;, value: data.patient.endereco,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Id do emitente&#x27;, placeholder: &#x27;Id do emitente&#x27;,
+        favorite: null, name: &#x27;doctor_id&#x27;, value: data.doctor.id,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Nome do emitente&#x27;, placeholder: &#x27;Nome do emitente&#x27;,
+        favorite: &#x27;4&#x27;, name: &#x27;doctor_name&#x27;, value: data.doctor.nome,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Formação do emitente&#x27;, placeholder: &#x27;Formação do emitente&#x27;,
+        favorite: null, name: &#x27;doctor_formacao&#x27;, value: data.doctor.formacao,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Nascimento do emitente&#x27;, placeholder: &#x27;Nascimento do emitente&#x27;,
+        favorite: null, name: &#x27;doctor_dt_nascimento&#x27;, value: data.doctor.dt_nascimento,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Conselho do emitente&#x27;, placeholder: &#x27;Conselho do emitente&#x27;,
+        favorite: null, name: &#x27;doctor_conselho&#x27;, value: data.doctor.conselho,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Telefone do emitente&#x27;, placeholder: &#x27;Telefone do emitente&#x27;,
+        favorite: null, name: &#x27;doctor_telefone&#x27;, value: data.doctor.telefone,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Data e Hora&#x27;, placeholder: &#x27;Data e Hora&#x27;,
+        favorite: &#x27;5&#x27;, name: &#x27;time&#x27;, value: &#x60;${data.hospital.data} - ${data.hospital.hora}&#x60;,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Hospital&#x27;, placeholder: &#x27;Hospital&#x27;,
+        favorite: null, name: &#x27;nome_hospital&#x27;, value: data.hospital.nome,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Medicamento&#x27;, placeholder: &#x27;Medicamento&#x27;,
+        favorite: &#x27;6&#x27;, name: &#x27;medicine&#x27;, value: &#x60;Biologico ${data.medicine}&#x60;,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Forma farmaceutica&#x27;, placeholder: &#x27;Forma farmaceutica&#x27;,
+        favorite: null, name: &#x27;pharmaceutical_form&#x27;, value: &#x60;Dose: ${data.pharmaceutical_form.dose}, Unidade de medida: ${data.pharmaceutical_form.unit}, Apresentação: ${data.pharmaceutical_form.presentation} &#x60;,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Posologia&#x27;, placeholder: &#x27;Posologia&#x27;,
+        favorite: null, name: &#x27;dosage&#x27;, value: &#x60;Via de notificação: ${data.dosage.route}, Intervalo: ${data.dosage.intervalo}, Duração: ${data.dosage.duracao} &#x60;,
+        validators: [], disabled: true, hideRequired: true
+      },
+      {
+        displayed: &#x27;Diluir&#x27;, placeholder: &#x27;Diluir&#x27;,
+        favorite: null, name: &#x27;dilute&#x27;, value: data.dilute,
+        validators: [], disabled: true, hideRequired: true
+      }
+    ];
+  }
 }
 </code></pre>
     </div>
@@ -965,7 +1040,7 @@ export class NotificacaoComponent implements AfterViewInit, OnDestroy {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div style="position: relative; min-height: 420px;">  <div class="division" style="padding: 5px 5px 0 10px; margin-left: 10%; margin-right: 10%;margin-top: 7px;">    <h2 class="hraleway" style="color: #0376bb!important;">      <span style="position: relative;">        <mat-icon style="font-size: 28px; color: #0376bb; position: absolute; left: -28px; padding-top: 3px;">          circle_notifications        </mat-icon>      </span>      Notificação de Eventos Adversos a Medicamentos Biológicos    </h2>  </div>  <div class="container-margin">    <div class="division" [class.hide]="_form" style="padding-bottom: 17px;">      <element-list [settings]="settings" [values]="values" (action)="elementListEvent($event)"></element-list>    </div>    <notificacao-form [forms]="_form" (action)="formEvent($event)" [class.hide]="!_form"></notificacao-form>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AdministracaoComponent', 'selector': ''},{'name': 'AdministracaoFormComponent', 'selector': 'administracao-form'},{'name': 'AdministracaoInfoComponent', 'selector': 'administracao-info'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationComponent', 'selector': ''},{'name': 'BottomSheetPrescription', 'selector': 'bottom-sheet-prescription'},{'name': 'CadastromedComponent', 'selector': ''},{'name': 'DispensacaoComponent', 'selector': ''},{'name': 'DispensacaoFormComponent', 'selector': 'dispensacao-form'},{'name': 'ElementListComponent', 'selector': 'element-list'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IntercambialidadeComponent', 'selector': 'intercambialidade'},{'name': 'IntercambialidadeDialogComponent', 'selector': 'intercambialidade-dialog'},{'name': 'MedicamentoComponent', 'selector': 'medicamento'},{'name': 'NotificacaoComponent', 'selector': ''},{'name': 'NotificacaoFormComponent', 'selector': 'notificacao-form'},{'name': 'PacienteMedicoComponent', 'selector': 'paciente-medico'},{'name': 'PageNotFoundComponent', 'selector': ''},{'name': 'PrescricaoComponent', 'selector': 'prescricao'},{'name': 'RastreabilidadeComponent', 'selector': 'rastreabilidade'},{'name': 'RastreabilidadeDialogComponent', 'selector': 'rastreabilidade-dialog'},{'name': 'ResponsavelComponent', 'selector': 'responsavel'},{'name': 'SheetComponent', 'selector': 'element-sheet'},{'name': 'SidenavHeaderComponent', 'selector': 'sidenav-menu'},{'name': 'SWSheetComponent', 'selector': 'sw-sheet'},{'name': 'ToolbarHeaderComponent', 'selector': 'toolbar-header'}];
+    var COMPONENTS = [{'name': 'AdministracaoComponent', 'selector': ''},{'name': 'AdministracaoFormComponent', 'selector': 'administracao-form'},{'name': 'AdministracaoInfoComponent', 'selector': 'administracao-info'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationComponent', 'selector': ''},{'name': 'BottomSheetPrescription', 'selector': 'bottom-sheet-prescription'},{'name': 'CadastromedComponent', 'selector': ''},{'name': 'DispensacaoComponent', 'selector': ''},{'name': 'DispensacaoFormComponent', 'selector': 'dispensacao-form'},{'name': 'ElementListComponent', 'selector': 'element-list'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IntercambialidadeComponent', 'selector': 'intercambialidade'},{'name': 'IntercambialidadeDialogComponent', 'selector': 'intercambialidade-dialog'},{'name': 'IntercambialidadeInfoComponent', 'selector': 'intercambialidade-info'},{'name': 'MedicamentoComponent', 'selector': 'medicamento'},{'name': 'NotificacaoComponent', 'selector': ''},{'name': 'NotificacaoFormComponent', 'selector': 'notificacao-form'},{'name': 'PacienteMedicoComponent', 'selector': 'paciente-medico'},{'name': 'PageNotFoundComponent', 'selector': ''},{'name': 'PrescricaoComponent', 'selector': 'prescricao'},{'name': 'RastreabilidadeComponent', 'selector': 'rastreabilidade'},{'name': 'RastreabilidadeDialogComponent', 'selector': 'rastreabilidade-dialog'},{'name': 'ResponsavelComponent', 'selector': 'responsavel'},{'name': 'SheetComponent', 'selector': 'element-sheet'},{'name': 'SidenavHeaderComponent', 'selector': 'sidenav-menu'},{'name': 'SWSheetComponent', 'selector': 'sw-sheet'},{'name': 'ToolbarHeaderComponent', 'selector': 'toolbar-header'}];
     var DIRECTIVES = [{'name': 'DisableControlDirective', 'selector': '[disableControl]'},{'name': 'HighlightDirective', 'selector': '[highlight]'},{'name': 'MaskPhoneDirective', 'selector': '[formControlName][mask-phone]'}];
     var ACTUAL_COMPONENT = {'name': 'NotificacaoComponent'};
 </script>

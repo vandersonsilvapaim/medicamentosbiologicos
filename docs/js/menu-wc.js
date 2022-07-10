@@ -321,16 +321,34 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 </li>
                             </li>
                             <li class="link">
-                                <a href="modules/IntercambialidadeModule.html" data-type="entity-link">IntercambialidadeModule</a>
+                                <a href="modules/IntercambialidadeInfoModule.html" data-type="entity-link">IntercambialidadeInfoModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' : 'data-target="#xs-components-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' }>
+                                            'data-target="#components-links-module-IntercambialidadeInfoModule-f13c3d5922a1c4354da292fb8801de72"' : 'data-target="#xs-components-links-module-IntercambialidadeInfoModule-f13c3d5922a1c4354da292fb8801de72"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' :
-                                            'id="xs-components-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-IntercambialidadeInfoModule-f13c3d5922a1c4354da292fb8801de72"' :
+                                            'id="xs-components-links-module-IntercambialidadeInfoModule-f13c3d5922a1c4354da292fb8801de72"' }>
+                                            <li class="link">
+                                                <a href="components/IntercambialidadeInfoComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">IntercambialidadeInfoComponent</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/IntercambialidadeModule.html" data-type="entity-link">IntercambialidadeModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-IntercambialidadeModule-49ec69f4f5e45b35d8a43dd61df135bc"' : 'data-target="#xs-components-links-module-IntercambialidadeModule-49ec69f4f5e45b35d8a43dd61df135bc"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-IntercambialidadeModule-49ec69f4f5e45b35d8a43dd61df135bc"' :
+                                            'id="xs-components-links-module-IntercambialidadeModule-49ec69f4f5e45b35d8a43dd61df135bc"' }>
                                             <li class="link">
                                                 <a href="components/IntercambialidadeComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">IntercambialidadeComponent</a>
@@ -339,13 +357,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                     </li>
                                 <li class="chapter inner">
                                     <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                        'data-target="#injectables-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' : 'data-target="#xs-injectables-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' }>
+                                        'data-target="#injectables-links-module-IntercambialidadeModule-49ec69f4f5e45b35d8a43dd61df135bc"' : 'data-target="#xs-injectables-links-module-IntercambialidadeModule-49ec69f4f5e45b35d8a43dd61df135bc"' }>
                                         <span class="icon ion-md-arrow-round-down"></span>
                                         <span>Injectables</span>
                                         <span class="icon ion-ios-arrow-down"></span>
                                     </div>
-                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' :
-                                        'id="xs-injectables-links-module-IntercambialidadeModule-3c2c3574e41c2778e28d80a4aea3e7bb"' }>
+                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-IntercambialidadeModule-49ec69f4f5e45b35d8a43dd61df135bc"' :
+                                        'id="xs-injectables-links-module-IntercambialidadeModule-49ec69f4f5e45b35d8a43dd61df135bc"' }>
                                         <li class="link">
                                             <a href="injectables/BiologicosService.html"
                                                 data-type="entity-link" data-context="sub-entity" data-context-id="modules" }>BiologicosService</a>
